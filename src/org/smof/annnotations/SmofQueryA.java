@@ -1,17 +1,17 @@
 package org.smof.annnotations;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
+import org.smof.annnotations.OperatorType;
 
 @SuppressWarnings("javadoc")
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RUNTIME)
 @Target(ANNOTATION_TYPE)
-public @interface SmofPFEQuery {
-	String name();
-	SmofQueryA[] expression();
+public @interface SmofQueryA {
+	String name() default "partialFilterExpression";
+	SmofFilter[] query();
 }

@@ -1,17 +1,15 @@
 package org.smof.annnotations;
 
-import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
-
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
-
 @SuppressWarnings("javadoc")
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ANNOTATION_TYPE)
-public @interface SmofPFEQuery {
-	String name();
-	SmofQueryA[] expression();
+@Target(ElementType.TYPE)
+public @interface SmofPartialIndexes {
+
+	SmofPartialIndex[] fields();
+
 }

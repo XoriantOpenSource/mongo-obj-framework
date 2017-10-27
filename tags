@@ -1,0 +1,970 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARRAY	src/org/smof/parsers/SmofType.java	/^	ARRAY(SmofArray.class),$/;"	e	enum:SmofType	file:
+ASCENDING	src/org/smof/index/IndexType.java	/^	ASCENDING("1");$/;"	e	enum:IndexType	file:
+AbstractBsonParser	src/org/smof/parsers/AbstractBsonParser.java	/^	protected AbstractBsonParser(SmofDispatcher dispatcher, SmofParser bsonParser, Class<?>... validTypes) {$/;"	m	class:AbstractBsonParser
+AbstractBsonParser	src/org/smof/parsers/AbstractBsonParser.java	/^abstract class AbstractBsonParser implements BsonParser {$/;"	c
+AbstractElement	src/org/smof/element/AbstractElement.java	/^	protected AbstractElement() {$/;"	m	class:AbstractElement
+AbstractElement	src/org/smof/element/AbstractElement.java	/^	protected AbstractElement(ObjectId id, boolean allowInitialNullId) {$/;"	m	class:AbstractElement
+AbstractElement	src/org/smof/element/AbstractElement.java	/^	protected AbstractElement(final ObjectId initialID) {$/;"	m	class:AbstractElement
+AbstractElement	src/org/smof/element/AbstractElement.java	/^public abstract class AbstractElement implements Element {$/;"	c
+AbstractSmofQuery	src/org/smof/collection/AbstractSmofQuery.java	/^	protected AbstractSmofQuery(SmofParser parser, Class<T> elementClass) {$/;"	m	class:AbstractSmofQuery
+AbstractSmofQuery	src/org/smof/collection/AbstractSmofQuery.java	/^public abstract class AbstractSmofQuery<T extends Element, Query extends FilterQuery<T, ?>> implements FilterQuery<T, Query> {$/;"	c
+AndQuery	src/org/smof/collection/AndQuery.java	/^	AndQuery(SmofQuery<T> parent) {$/;"	m	class:AndQuery
+AndQuery	src/org/smof/collection/AndQuery.java	/^public class AndQuery<T extends Element> extends AbstractSmofQuery<T, AndQuery<T>> {$/;"	c
+ArrayParser	src/org/smof/parsers/ArrayParser.java	/^	ArrayParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:ArrayParser
+ArrayParser	src/org/smof/parsers/ArrayParser.java	/^class ArrayParser extends AbstractBsonParser {$/;"	c
+BOOLEAN	src/org/smof/parsers/SmofType.java	/^	BOOLEAN(SmofBoolean.class);$/;"	e	enum:SmofType	file:
+BYTE	src/org/smof/parsers/SmofType.java	/^	BYTE(SmofByte.class),$/;"	e	enum:SmofType	file:
+BooleanParser	src/org/smof/parsers/BooleanParser.java	/^	protected BooleanParser(SmofParser bsonParser, SmofDispatcher dispatcher) {$/;"	m	class:BooleanParser
+BooleanParser	src/org/smof/parsers/BooleanParser.java	/^public class BooleanParser extends AbstractBsonParser {$/;"	c
+BsonBuilder	src/org/smof/parsers/BsonBuilder.java	/^	BsonBuilder() {$/;"	m	class:BsonBuilder
+BsonBuilder	src/org/smof/parsers/BsonBuilder.java	/^class BsonBuilder<T> {$/;"	c
+BsonLazyObjectId	src/org/smof/parsers/BsonLazyObjectId.java	/^	public BsonLazyObjectId(String fieldName, Element element) {$/;"	m	class:BsonLazyObjectId
+BsonLazyObjectId	src/org/smof/parsers/BsonLazyObjectId.java	/^public class BsonLazyObjectId extends BsonObjectId {$/;"	c
+BsonParser	src/org/smof/parsers/BsonParser.java	/^interface BsonParser {$/;"	i
+BsonUtils	src/org/smof/utils/BsonUtils.java	/^public class BsonUtils {$/;"	c
+ByteParser	src/org/smof/parsers/ByteParser.java	/^	protected ByteParser(SmofDispatcher dispatcher, SmofParser bsonParser) {$/;"	m	class:ByteParser
+ByteParser	src/org/smof/parsers/ByteParser.java	/^class ByteParser extends AbstractBsonParser {$/;"	c
+CACHE_SIZE	src/org/smof/collection/SmofCollectionImpl.java	/^	private static final int CACHE_SIZE = 200;$/;"	f	class:SmofCollectionImpl	file:
+CURRENT_DATE	src/org/smof/collection/Operators.java	/^	CURRENT_DATE("currentDate");$/;"	e	enum:Operators	file:
+CollectionOptions	src/org/smof/collection/CollectionOptions.java	/^public interface CollectionOptions<E extends Element> {$/;"	i
+CollectionOptionsImpl	src/org/smof/collection/CollectionOptionsImpl.java	/^	CollectionOptionsImpl() {$/;"	m	class:CollectionOptionsImpl
+CollectionOptionsImpl	src/org/smof/collection/CollectionOptionsImpl.java	/^class CollectionOptionsImpl<E extends Element> implements CollectionOptions<E> {$/;"	c
+CollectionsPool	src/org/smof/collection/CollectionsPool.java	/^	public CollectionsPool() {$/;"	m	class:CollectionsPool
+CollectionsPool	src/org/smof/collection/CollectionsPool.java	/^public class CollectionsPool implements Iterable<SmofCollection<?>>{$/;"	c
+DATETIME	src/org/smof/parsers/SmofType.java	/^	DATETIME(SmofDate.class),$/;"	e	enum:SmofType	file:
+DEFAULT_BUCKET	src/org/smof/collection/Smof.java	/^	public static final String DEFAULT_BUCKET = "fs";$/;"	f	class:Smof
+DESCENDING	src/org/smof/index/IndexType.java	/^	DESCENDING("-1"),$/;"	e	enum:IndexType	file:
+DateTimeParser	src/org/smof/parsers/DateTimeParser.java	/^	DateTimeParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:DateTimeParser
+DateTimeParser	src/org/smof/parsers/DateTimeParser.java	/^class DateTimeParser extends AbstractBsonParser {$/;"	c
+DocumentParser	src/org/smof/collection/SmofResults.java	/^		private DocumentParser(BsonDocument document) {$/;"	m	class:SmofResults.DocumentParser	file:
+DocumentParser	src/org/smof/collection/SmofResults.java	/^	private class DocumentParser implements Callable<T>{$/;"	c	class:SmofResults
+ENUM_NAME	src/org/smof/parsers/ObjectParser.java	/^	private static final String ENUM_NAME = "_enumValue";$/;"	f	class:ObjectParser	file:
+Element	src/org/smof/element/Element.java	/^public interface Element {$/;"	i
+FilterQuery	src/org/smof/collection/FilterQuery.java	/^interface FilterQuery<E extends Element, T extends FilterQuery<E, ?>> {$/;"	i
+ForceInspection	src/org/smof/annnotations/ForceInspection.java	/^public @interface ForceInspection {$/;"	i
+Handler	src/org/smof/parsers/LazyLoader.java	/^		Handler(ObjectId id, SmofDispatcher dispatcher, Class<T> delegateClass) {$/;"	m	class:LazyLoader.Handler
+Handler	src/org/smof/parsers/LazyLoader.java	/^	public static class Handler<T extends Element> implements InvocationHandler {$/;"	c	class:LazyLoader
+HandlerSetter	src/org/smof/parsers/LazyLoader.java	/^	public interface HandlerSetter {$/;"	i	class:LazyLoader
+ID	src/org/smof/element/Element.java	/^	String ID = "_id";$/;"	f	interface:Element
+INCREASE	src/org/smof/collection/Operators.java	/^	INCREASE("inc"),$/;"	e	enum:Operators	file:
+IdLoader	src/org/smof/collection/SmofCollectionImpl.java	/^		private IdLoader(ObjectId id) {$/;"	m	class:SmofCollectionImpl.IdLoader	file:
+IdLoader	src/org/smof/collection/SmofCollectionImpl.java	/^	private class IdLoader implements Callable<T> {$/;"	c	class:SmofCollectionImpl
+IndexType	src/org/smof/index/IndexType.java	/^	private IndexType(String mongoToken) {$/;"	m	class:IndexType	file:
+IndexType	src/org/smof/index/IndexType.java	/^public enum IndexType {$/;"	g
+IndexType.ASCENDING	src/org/smof/annnotations/SmofNumber.java	/^	IndexType indexType() default IndexType.ASCENDING;$/;"	f	interface:SmofNumber
+IndexType.ASCENDING	src/org/smof/annnotations/SmofString.java	/^	IndexType indexType() default IndexType.ASCENDING;$/;"	f	interface:SmofString
+InternalIndex	src/org/smof/index/InternalIndex.java	/^	private InternalIndex(Set<Bson> indexes, IndexOptions options) {$/;"	m	class:InternalIndex	file:
+InternalIndex	src/org/smof/index/InternalIndex.java	/^public class InternalIndex {$/;"	c
+InvalidBsonTypeException	src/org/smof/exception/InvalidBsonTypeException.java	/^	public InvalidBsonTypeException(BsonType type, String fieldName) {$/;"	m	class:InvalidBsonTypeException
+InvalidBsonTypeException	src/org/smof/exception/InvalidBsonTypeException.java	/^public class InvalidBsonTypeException extends Throwable {$/;"	c
+InvalidSmofTypeException	src/org/smof/exception/InvalidSmofTypeException.java	/^	public InvalidSmofTypeException(String message) {$/;"	m	class:InvalidSmofTypeException
+InvalidSmofTypeException	src/org/smof/exception/InvalidSmofTypeException.java	/^public class InvalidSmofTypeException extends Exception {$/;"	c
+InvalidTypeException	src/org/smof/exception/InvalidTypeException.java	/^	public InvalidTypeException(Class<?> invalidType, SmofType type) {$/;"	m	class:InvalidTypeException
+InvalidTypeException	src/org/smof/exception/InvalidTypeException.java	/^public class InvalidTypeException extends Throwable {$/;"	c
+LazyLoader	src/org/smof/parsers/LazyLoader.java	/^	private LazyLoader(SmofDispatcher dispatcher) {$/;"	m	class:LazyLoader	file:
+LazyLoader	src/org/smof/parsers/LazyLoader.java	/^public class LazyLoader {$/;"	c
+MAXIMUM	src/org/smof/collection/Operators.java	/^	MAXIMUM("miax"),$/;"	e	enum:Operators	file:
+MINIMUM	src/org/smof/collection/Operators.java	/^	MINIMUM("min"),$/;"	e	enum:Operators	file:
+MULTIPLY	src/org/smof/collection/Operators.java	/^	MULTIPLY("mul"),$/;"	e	enum:Operators	file:
+MasterField	src/org/smof/field/MasterField.java	/^	public MasterField(Class<?> elementClass) {$/;"	m	class:MasterField
+MasterField	src/org/smof/field/MasterField.java	/^public class MasterField implements SmofField {$/;"	c
+MissingRequiredFieldException	src/org/smof/exception/MissingRequiredFieldException.java	/^	public MissingRequiredFieldException(String name) {$/;"	m	class:MissingRequiredFieldException
+MissingRequiredFieldException	src/org/smof/exception/MissingRequiredFieldException.java	/^public class MissingRequiredFieldException extends Exception {$/;"	c
+NUMBER	src/org/smof/parsers/SmofType.java	/^	NUMBER(SmofNumber.class),$/;"	e	enum:SmofType	file:
+NoSuchCollection	src/org/smof/exception/NoSuchCollection.java	/^	public NoSuchCollection(Class<? extends Element> elementClass) {$/;"	m	class:NoSuchCollection
+NoSuchCollection	src/org/smof/exception/NoSuchCollection.java	/^public class NoSuchCollection extends Throwable {$/;"	c
+NumberParser	src/org/smof/parsers/NumberParser.java	/^	NumberParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:NumberParser
+NumberParser	src/org/smof/parsers/NumberParser.java	/^class NumberParser extends AbstractBsonParser {$/;"	c
+OBJECT	src/org/smof/parsers/SmofType.java	/^	OBJECT(SmofObject.class),$/;"	e	enum:SmofType	file:
+OBJECT_ID	src/org/smof/parsers/SmofType.java	/^	OBJECT_ID(SmofObjectId.class),$/;"	e	enum:SmofType	file:
+OID	src/org/smof/element/Element.java	/^	String OID = "$oid";$/;"	f	interface:Element
+ON_INSERT	src/org/smof/parsers/SmofParser.java	/^	public static final String ON_INSERT = "onInsert";$/;"	f	class:SmofParser
+ObjectIdParser	src/org/smof/parsers/ObjectIdParser.java	/^	ObjectIdParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:ObjectIdParser
+ObjectIdParser	src/org/smof/parsers/ObjectIdParser.java	/^class ObjectIdParser extends AbstractBsonParser {$/;"	c
+ObjectParser	src/org/smof/parsers/ObjectParser.java	/^	ObjectParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:ObjectParser
+ObjectParser	src/org/smof/parsers/ObjectParser.java	/^class ObjectParser extends AbstractBsonParser {$/;"	c
+OperatorType	src/org/smof/annnotations/OperatorType.java	/^	private OperatorType(String mongoToken) {$/;"	m	class:OperatorType	file:
+OperatorType	src/org/smof/annnotations/OperatorType.java	/^public enum OperatorType {$/;"	g
+Operators	src/org/smof/collection/Operators.java	/^	private Operators(String operator) {$/;"	m	class:Operators	file:
+Operators	src/org/smof/collection/Operators.java	/^public enum Operators {$/;"	g
+OrQuery	src/org/smof/collection/OrQuery.java	/^	OrQuery(SmofQuery<T> parent) {$/;"	m	class:OrQuery
+OrQuery	src/org/smof/collection/OrQuery.java	/^public class OrQuery<T extends Element> extends AbstractSmofQuery<T, OrQuery<T>> {$/;"	c
+ParameterField	src/org/smof/field/ParameterField.java	/^	public ParameterField(Parameter parameter, SmofParam note) {$/;"	m	class:ParameterField
+ParameterField	src/org/smof/field/ParameterField.java	/^public class ParameterField implements SmofField {$/;"	c
+PartialIndex	src/org/smof/index/PartialIndex.java	/^	public PartialIndex() {$/;"	m	class:PartialIndex
+PartialIndex	src/org/smof/index/PartialIndex.java	/^	public PartialIndex(Set<Bson> indices,IndexOptions options){$/;"	m	class:PartialIndex
+PartialIndex	src/org/smof/index/PartialIndex.java	/^public class PartialIndex {$/;"	c
+PrimaryField	src/org/smof/field/PrimaryField.java	/^	public PrimaryField(Field field, SmofType type) {$/;"	m	class:PrimaryField
+PrimaryField	src/org/smof/field/PrimaryField.java	/^public class PrimaryField implements Comparable<PrimaryField>, SmofField{$/;"	c
+RENAME	src/org/smof/collection/Operators.java	/^	RENAME("rename"),$/;"	e	enum:Operators	file:
+SET	src/org/smof/collection/Operators.java	/^	SET("set"),$/;"	e	enum:Operators	file:
+SET_ON_INSERT	src/org/smof/collection/Operators.java	/^	SET_ON_INSERT("setOnInsert"),$/;"	e	enum:Operators	file:
+STRING	src/org/smof/parsers/SmofType.java	/^	STRING(SmofString.class),$/;"	e	enum:SmofType	file:
+SecondaryField	src/org/smof/field/SecondaryField.java	/^	public SecondaryField(String name, SmofType type, Class<?> fieldClass) {$/;"	m	class:SecondaryField
+SecondaryField	src/org/smof/field/SecondaryField.java	/^public class SecondaryField implements SmofField {$/;"	c
+SerializationContext	src/org/smof/parsers/SerializationContext.java	/^	private SerializationContext() {$/;"	m	class:SerializationContext	file:
+SerializationContext	src/org/smof/parsers/SerializationContext.java	/^class SerializationContext {$/;"	c
+Smof	src/org/smof/collection/Smof.java	/^	private Smof(MongoClient client, MongoDatabase database) {$/;"	m	class:Smof	file:
+Smof	src/org/smof/collection/Smof.java	/^public final class Smof implements Closeable {$/;"	c
+Smof.DEFAULT_BUCKET	src/org/smof/annnotations/SmofObject.java	/^	String bucketName() default Smof.DEFAULT_BUCKET;$/;"	f	interface:SmofObject
+SmofArray	src/org/smof/annnotations/SmofArray.java	/^public @interface SmofArray {$/;"	i
+SmofBoolean	src/org/smof/annnotations/SmofBoolean.java	/^public @interface SmofBoolean {$/;"	i
+SmofBuilder	src/org/smof/annnotations/SmofBuilder.java	/^public @interface SmofBuilder {$/;"	i
+SmofByte	src/org/smof/annnotations/SmofByte.java	/^public @interface SmofByte {$/;"	i
+SmofCollection	src/org/smof/collection/SmofCollection.java	/^public interface SmofCollection<T extends Element> {$/;"	i
+SmofCollectionImpl	src/org/smof/collection/SmofCollectionImpl.java	/^	SmofCollectionImpl(String name, MongoCollection<BsonDocument> collection, Class<T> type, SmofParser parser, CollectionOptions<T> options) {$/;"	m	class:SmofCollectionImpl
+SmofCollectionImpl	src/org/smof/collection/SmofCollectionImpl.java	/^class SmofCollectionImpl<T extends Element> implements SmofCollection<T> {$/;"	c
+SmofDate	src/org/smof/annnotations/SmofDate.java	/^public @interface SmofDate {$/;"	i
+SmofDispatcher	src/org/smof/collection/SmofDispatcher.java	/^	public SmofDispatcher(CollectionsPool collections, SmofGridStreamManager streamManager) {$/;"	m	class:SmofDispatcher
+SmofDispatcher	src/org/smof/collection/SmofDispatcher.java	/^public class SmofDispatcher {$/;"	c
+SmofException	src/org/smof/exception/SmofException.java	/^	public SmofException(Throwable cause) {$/;"	m	class:SmofException
+SmofException	src/org/smof/exception/SmofException.java	/^public class SmofException extends RuntimeException{$/;"	c
+SmofField	src/org/smof/field/SmofField.java	/^public interface SmofField {$/;"	i
+SmofFilter	src/org/smof/annnotations/SmofFilter.java	/^public @interface SmofFilter {$/;"	i
+SmofGridRef	src/org/smof/gridfs/SmofGridRef.java	/^public interface SmofGridRef extends Element {$/;"	i
+SmofGridRefFactory	src/org/smof/gridfs/SmofGridRefFactory.java	/^	private SmofGridRefFactory() {}$/;"	m	class:SmofGridRefFactory	file:
+SmofGridRefFactory	src/org/smof/gridfs/SmofGridRefFactory.java	/^public class SmofGridRefFactory {$/;"	c
+SmofGridRefImpl	src/org/smof/gridfs/SmofGridRefImpl.java	/^	SmofGridRefImpl(ObjectId id, String bucketName) {$/;"	m	class:SmofGridRefImpl
+SmofGridRefImpl	src/org/smof/gridfs/SmofGridRefImpl.java	/^class SmofGridRefImpl extends AbstractElement implements SmofGridRef {$/;"	c
+SmofGridStreamManager	src/org/smof/gridfs/SmofGridStreamManager.java	/^public interface SmofGridStreamManager {$/;"	i
+SmofGridStreamManagerImpl	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	SmofGridStreamManagerImpl(CollectionsPool pool) {$/;"	m	class:SmofGridStreamManagerImpl
+SmofGridStreamManagerImpl	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^class SmofGridStreamManagerImpl implements SmofGridStreamManager {$/;"	c
+SmofIndex	src/org/smof/annnotations/SmofIndex.java	/^public @interface SmofIndex {$/;"	i
+SmofIndexField	src/org/smof/annnotations/SmofIndexField.java	/^public @interface SmofIndexField {$/;"	i
+SmofIndexes	src/org/smof/annnotations/SmofIndexes.java	/^public @interface SmofIndexes {$/;"	i
+SmofInsertResult	src/org/smof/collection/SmofInsertResult.java	/^	public SmofInsertResult() {$/;"	m	class:SmofInsertResult
+SmofInsertResult	src/org/smof/collection/SmofInsertResult.java	/^public class SmofInsertResult {$/;"	c
+SmofNumber	src/org/smof/annnotations/SmofNumber.java	/^public @interface SmofNumber {$/;"	i
+SmofObject	src/org/smof/annnotations/SmofObject.java	/^public @interface SmofObject {$/;"	i
+SmofObjectId	src/org/smof/annnotations/SmofObjectId.java	/^public @interface SmofObjectId {$/;"	i
+SmofOpOptions	src/org/smof/collection/SmofOpOptions.java	/^	private SmofOpOptions() {$/;"	m	class:SmofOpOptions	file:
+SmofOpOptions	src/org/smof/collection/SmofOpOptions.java	/^public class SmofOpOptions {$/;"	c
+SmofPFEQuery	src/org/smof/annnotations/SmofPFEQuery.java	/^public @interface SmofPFEQuery {$/;"	i
+SmofParam	src/org/smof/annnotations/SmofParam.java	/^public @interface SmofParam {$/;"	i
+SmofParser	src/org/smof/parsers/SmofParser.java	/^	public SmofParser(SmofDispatcher dispatcher) {$/;"	m	class:SmofParser
+SmofParser	src/org/smof/parsers/SmofParser.java	/^public class SmofParser {$/;"	c
+SmofParserPool	src/org/smof/parsers/SmofParserPool.java	/^	private SmofParserPool(SmofParser parserContext, SmofDispatcher dispatcher) {$/;"	m	class:SmofParserPool	file:
+SmofParserPool	src/org/smof/parsers/SmofParserPool.java	/^public class SmofParserPool {$/;"	c
+SmofPartialIndex	src/org/smof/annnotations/SmofPartialIndex.java	/^public @interface SmofPartialIndex {$/;"	i
+SmofPartialIndexes	src/org/smof/annnotations/SmofPartialIndexes.java	/^public @interface SmofPartialIndexes {$/;"	i
+SmofQuery	src/org/smof/collection/SmofQuery.java	/^	SmofQuery(Class<T> elementClass, SmofParser parser, Cache<ObjectId, T> cache, MongoCollection<BsonDocument> collection) {$/;"	m	class:SmofQuery
+SmofQuery	src/org/smof/collection/SmofQuery.java	/^public class SmofQuery<T extends Element> extends AbstractSmofQuery<T, SmofQuery<T>>{$/;"	c
+SmofQueryA	src/org/smof/annnotations/SmofQueryA.java	/^public @interface SmofQueryA {$/;"	i
+SmofResults	src/org/smof/collection/SmofResults.java	/^	SmofResults(SmofParser parser, Class<T> elementClass, Cache<ObjectId, T> cache, MongoCollection<BsonDocument> collection, Bson filter) {$/;"	m	class:SmofResults
+SmofResults	src/org/smof/collection/SmofResults.java	/^public class SmofResults<T extends Element> {$/;"	c
+SmofString	src/org/smof/annnotations/SmofString.java	/^public @interface SmofString {$/;"	i
+SmofType	src/org/smof/parsers/SmofType.java	/^	private SmofType(Class<? extends Annotation> annotClass) {$/;"	m	class:SmofType	file:
+SmofType	src/org/smof/parsers/SmofType.java	/^public enum SmofType {$/;"	g
+SmofType.OBJECT	src/org/smof/annnotations/SmofObject.java	/^	SmofType mapValueType() default SmofType.OBJECT;$/;"	f	interface:SmofObject
+SmofTypeContext	src/org/smof/parsers/SmofTypeContext.java	/^	SmofTypeContext() {$/;"	m	class:SmofTypeContext
+SmofTypeContext	src/org/smof/parsers/SmofTypeContext.java	/^class SmofTypeContext {$/;"	c
+SmofUpdate	src/org/smof/collection/SmofUpdate.java	/^	SmofUpdate(SmofCollection<T> collection) {$/;"	m	class:SmofUpdate
+SmofUpdate	src/org/smof/collection/SmofUpdate.java	/^public class SmofUpdate<T extends Element> {$/;"	c
+SmofUpdateQuery	src/org/smof/collection/SmofUpdateQuery.java	/^	SmofUpdateQuery(BsonDocument update, SmofCollection<T> collection, SmofOpOptions options, Map<String, PrimaryField> fields) {$/;"	m	class:SmofUpdateQuery
+SmofUpdateQuery	src/org/smof/collection/SmofUpdateQuery.java	/^public class SmofUpdateQuery<T extends Element> {$/;"	c
+StringParser	src/org/smof/parsers/StringParser.java	/^	StringParser(SmofParser parser, SmofDispatcher dispatcher) {$/;"	m	class:StringParser
+StringParser	src/org/smof/parsers/StringParser.java	/^class StringParser extends AbstractBsonParser {$/;"	c
+TEXT	src/org/smof/index/IndexType.java	/^	TEXT("text"),$/;"	e	enum:IndexType	file:
+TypeBuilder	src/org/smof/parsers/TypeBuilder.java	/^	private TypeBuilder(Class<T> type, Constructor<T> constructor) {$/;"	m	class:TypeBuilder	file:
+TypeBuilder	src/org/smof/parsers/TypeBuilder.java	/^	private TypeBuilder(Class<T> type, Method method) {$/;"	m	class:TypeBuilder	file:
+TypeBuilder	src/org/smof/parsers/TypeBuilder.java	/^	private TypeBuilder(Class<T> type, Method method, Object instance) {$/;"	m	class:TypeBuilder	file:
+TypeBuilder	src/org/smof/parsers/TypeBuilder.java	/^class TypeBuilder<T> {$/;"	c
+TypeParser	src/org/smof/parsers/TypeParser.java	/^	private TypeParser(Class<T> type) {$/;"	m	class:TypeParser	file:
+TypeParser	src/org/smof/parsers/TypeParser.java	/^public class TypeParser<T> {$/;"	c
+TypeStructure	src/org/smof/parsers/TypeStructure.java	/^	TypeStructure(Class<T> type, TypeBuilder<T> builder) {$/;"	m	class:TypeStructure
+TypeStructure	src/org/smof/parsers/TypeStructure.java	/^public class TypeStructure<T> {$/;"	c
+UNIQUE	src/org/smof/index/InternalIndex.java	/^	private static final String UNIQUE = "unique";$/;"	f	class:InternalIndex	file:
+UNIQUE	src/org/smof/index/PartialIndex.java	/^	private static final String UNIQUE = "unique";$/;"	f	class:PartialIndex	file:
+UNSET	src/org/smof/collection/Operators.java	/^	UNSET("unset"),$/;"	e	enum:Operators	file:
+VALID_TYPES	src/org/smof/parsers/BooleanParser.java	/^	private static final Class<?>[] VALID_TYPES = {boolean.class, Boolean.class};$/;"	f	class:BooleanParser	file:
+VALID_TYPES	src/org/smof/parsers/ByteParser.java	/^	private static final Class<?>[] VALID_TYPES = {byte[].class, Byte[].class};$/;"	f	class:ByteParser	file:
+VALID_TYPES	src/org/smof/parsers/DateTimeParser.java	/^	private static final Class<?>[] VALID_TYPES = {Instant.class, LocalDate.class, LocalDateTime.class, $/;"	f	class:DateTimeParser	file:
+VALID_TYPES	src/org/smof/parsers/NumberParser.java	/^	private static final Class<?>[] VALID_TYPES = {int.class,$/;"	f	class:NumberParser	file:
+VALID_TYPES	src/org/smof/parsers/StringParser.java	/^	private static final Class<?>[] VALID_TYPES = {$/;"	f	class:StringParser	file:
+ZONE	src/org/smof/parsers/DateTimeParser.java	/^	private static final ZoneId ZONE = ZoneId.systemDefault();$/;"	f	class:DateTimeParser	file:
+addConstraint	src/org/smof/collection/CollectionOptions.java	/^	void addConstraint(Predicate<E> constraint);$/;"	m	interface:CollectionOptions
+addConstraint	src/org/smof/collection/CollectionOptionsImpl.java	/^	public void addConstraint(Predicate<E> constraint) {$/;"	m	class:CollectionOptionsImpl
+addFields	src/org/smof/parsers/BsonBuilder.java	/^	private final Map<Field, Object> addFields;$/;"	f	class:BsonBuilder	file:
+addSubType	src/org/smof/parsers/TypeStructure.java	/^	<E> void addSubType(Class<E> subType, TypeParser<E> parser) {$/;"	m	class:TypeStructure
+allFields	src/org/smof/parsers/TypeStructure.java	/^	private final Map<String, PrimaryField> allFields;$/;"	f	class:TypeStructure	file:
+and	src/org/smof/collection/AndQuery.java	/^	public AndQuery<T> and(Bson filter) {$/;"	m	class:AndQuery
+annotClass	src/org/smof/parsers/SmofType.java	/^	private final Class<? extends Annotation> annotClass;$/;"	f	class:SmofType	file:
+annotation	src/org/smof/field/PrimaryField.java	/^	private Annotation annotation;$/;"	f	class:PrimaryField	file:
+append	src/org/smof/parsers/BsonBuilder.java	/^	void append(String fieldName, Object parsedObject) {$/;"	m	class:BsonBuilder
+append2AdditionalFields	src/org/smof/parsers/BsonBuilder.java	/^	void append2AdditionalFields(Field field, Object parsedObject) {$/;"	m	class:BsonBuilder
+append2LazyElements	src/org/smof/parsers/BsonBuilder.java	/^	void append2LazyElements(PrimaryField field, ObjectId id) {$/;"	m	class:BsonBuilder
+applyBsonFilter	src/org/smof/collection/AndQuery.java	/^	public AndQuery<T> applyBsonFilter(Bson filter) {$/;"	m	class:AndQuery
+applyBsonFilter	src/org/smof/collection/FilterQuery.java	/^	T applyBsonFilter(Bson filter);$/;"	m	interface:FilterQuery
+applyBsonFilter	src/org/smof/collection/OrQuery.java	/^	public OrQuery<T> applyBsonFilter(Bson filter) {$/;"	m	class:OrQuery
+applyBsonFilter	src/org/smof/collection/SmofQuery.java	/^	public SmofQuery<T> applyBsonFilter(Bson filter) {$/;"	m	class:SmofQuery
+asList	src/org/smof/collection/SmofResults.java	/^	public List<T> asList() {$/;"	m	class:SmofResults
+attachByteArray	src/org/smof/gridfs/SmofGridRef.java	/^	public void attachByteArray(ByteArrayInputStream byteStream);$/;"	m	interface:SmofGridRef
+attachByteArray	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public void attachByteArray(ByteArrayInputStream byteStream) {$/;"	m	class:SmofGridRefImpl
+attachFile	src/org/smof/gridfs/SmofGridRef.java	/^	public void attachFile(Path path);$/;"	m	interface:SmofGridRef
+attachFile	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public void attachFile(Path path) {$/;"	m	class:SmofGridRefImpl
+attachedFile	src/org/smof/gridfs/SmofGridRefImpl.java	/^	private Path attachedFile;$/;"	f	class:SmofGridRefImpl	file:
+beginAnd	src/org/smof/collection/SmofQuery.java	/^	public AndQuery<T> beginAnd() {$/;"	m	class:SmofQuery
+beginOr	src/org/smof/collection/SmofQuery.java	/^	public OrQuery<T> beginOr() {$/;"	m	class:SmofQuery
+bsonParser	src/org/smof/parsers/AbstractBsonParser.java	/^	protected final SmofParser bsonParser;$/;"	f	class:AbstractBsonParser
+bucketName	src/org/smof/gridfs/SmofGridRefImpl.java	/^	private String bucketName;$/;"	f	class:SmofGridRefImpl	file:
+build	src/org/smof/parsers/BsonBuilder.java	/^	T build(TypeBuilder<T> builder) {$/;"	m	class:BsonBuilder
+build	src/org/smof/parsers/TypeBuilder.java	/^	T build(Document document) {$/;"	m	class:TypeBuilder
+buildObject	src/org/smof/parsers/ObjectParser.java	/^	private <T> T buildObject(BsonDocument document, BsonBuilder<T> builder, Class<T> type) {$/;"	m	class:ObjectParser	file:
+builder	src/org/smof/field/PrimaryField.java	/^	private boolean builder;$/;"	f	class:PrimaryField	file:
+byElement	src/org/smof/collection/SmofQuery.java	/^	public T byElement(T element) {$/;"	m	class:SmofQuery
+bypassCache	src/org/smof/collection/SmofOpOptions.java	/^	private boolean bypassCache;$/;"	f	class:SmofOpOptions	file:
+bypassCache	src/org/smof/collection/SmofOpOptions.java	/^	public void bypassCache(boolean bypassCache) {$/;"	m	class:SmofOpOptions
+byteBuddy	src/org/smof/parsers/LazyLoader.java	/^	private final ByteBuddy byteBuddy;$/;"	f	class:LazyLoader	file:
+byteStream	src/org/smof/gridfs/SmofGridRefImpl.java	/^	private ByteArrayInputStream byteStream;$/;"	f	class:SmofGridRefImpl	file:
+cache	src/org/smof/collection/SmofCollectionImpl.java	/^	private final Cache<ObjectId, T> cache;$/;"	f	class:SmofCollectionImpl	file:
+cache	src/org/smof/collection/SmofQuery.java	/^	private final Cache<ObjectId, T> cache;$/;"	f	class:SmofQuery	file:
+cache	src/org/smof/collection/SmofResults.java	/^	private final Cache<ObjectId, T> cache;$/;"	f	class:SmofResults	file:
+call	src/org/smof/collection/SmofCollectionImpl.java	/^		public T call() throws Exception {$/;"	m	class:SmofCollectionImpl.IdLoader
+call	src/org/smof/collection/SmofResults.java	/^		public T call() throws Exception {$/;"	m	class:SmofResults.DocumentParser
+checkNotPrimitiveOrArray	src/org/smof/parsers/TypeBuilder.java	/^	private void checkNotPrimitiveOrArray(Class<?> type) {$/;"	m	class:TypeBuilder	file:
+checkRequired	src/org/smof/parsers/ObjectParser.java	/^	private void checkRequired(PrimaryField field, Object value) {$/;"	m	class:ObjectParser	file:
+checkSmofParam	src/org/smof/parsers/TypeBuilder.java	/^	private void checkSmofParam(SmofParam annot) {$/;"	m	class:TypeBuilder	file:
+checkTypeConsistency	src/org/smof/parsers/TypeStructure.java	/^	private void checkTypeConsistency(TypeParser<?> parser) {$/;"	m	class:TypeStructure	file:
+checkValidBson	src/org/smof/parsers/SmofParser.java	/^	private void checkValidBson(BsonValue value, SmofField field) {$/;"	m	class:SmofParser	file:
+checkValidBuilder	src/org/smof/parsers/TypeStructure.java	/^	private void checkValidBuilder(TypeBuilder<T> builder) {$/;"	m	class:TypeStructure	file:
+checkValidField	src/org/smof/field/PrimaryField.java	/^	private void checkValidField(Field field) {$/;"	m	class:PrimaryField	file:
+checkValidMapOpts	src/org/smof/parsers/ObjectParser.java	/^	private void checkValidMapOpts(PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+checkValidParser	src/org/smof/parsers/TypeStructure.java	/^	private void checkValidParser(TypeParser<?> parser) {$/;"	m	class:TypeStructure	file:
+checkValidSmofField	src/org/smof/parsers/SmofTypeContext.java	/^	private void checkValidSmofField(SmofField field, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+checkValidType	src/org/smof/parsers/TypeStructure.java	/^	private void checkValidType(String name, SmofType type) {$/;"	m	class:TypeStructure	file:
+clear	src/org/smof/parsers/SerializationContext.java	/^	void clear() {$/;"	m	class:SerializationContext
+clearBuckets	src/org/smof/collection/CollectionsPool.java	/^	public void clearBuckets() {$/;"	m	class:CollectionsPool
+clearCollections	src/org/smof/collection/CollectionsPool.java	/^	public void clearCollections() {$/;"	m	class:CollectionsPool
+client	src/org/smof/collection/Smof.java	/^	private final MongoClient client;$/;"	f	class:Smof	file:
+close	src/org/smof/collection/Smof.java	/^	public void close() {$/;"	m	class:Smof
+collection	src/org/smof/collection/SmofCollectionImpl.java	/^	protected final MongoCollection<BsonDocument> collection;$/;"	f	class:SmofCollectionImpl
+collection	src/org/smof/collection/SmofQuery.java	/^	private final MongoCollection<BsonDocument> collection;$/;"	f	class:SmofQuery	file:
+collection	src/org/smof/collection/SmofResults.java	/^	private final MongoCollection<BsonDocument> collection;$/;"	f	class:SmofResults	file:
+collection	src/org/smof/collection/SmofUpdate.java	/^	private final SmofCollection<T> collection;$/;"	f	class:SmofUpdate	file:
+collection	src/org/smof/collection/SmofUpdateQuery.java	/^	private final SmofCollection<T> collection;$/;"	f	class:SmofUpdateQuery	file:
+collections	src/org/smof/collection/CollectionsPool.java	/^	private final Map<Class<? extends Element>, SmofCollection<? extends Element>> collections;$/;"	f	class:CollectionsPool	file:
+collections	src/org/smof/collection/Smof.java	/^	private final CollectionsPool collections;$/;"	f	class:Smof	file:
+collections	src/org/smof/collection/SmofDispatcher.java	/^	private final CollectionsPool collections;$/;"	f	class:SmofDispatcher	file:
+compareTo	src/org/smof/field/PrimaryField.java	/^	public int compareTo(PrimaryField o) {$/;"	m	class:PrimaryField
+constraints	src/org/smof/collection/CollectionOptionsImpl.java	/^	private final List<Predicate<E>> constraints;$/;"	f	class:CollectionOptionsImpl	file:
+constructor	src/org/smof/parsers/TypeBuilder.java	/^	private final Constructor<T> constructor;$/;"	f	class:TypeBuilder	file:
+contains	src/org/smof/parsers/SerializationContext.java	/^	boolean contains(Object object, SmofType type) {$/;"	m	class:SerializationContext
+containsSub	src/org/smof/parsers/TypeStructure.java	/^	public boolean containsSub(Class<?> type) {$/;"	m	class:TypeStructure
+containsSubOrSuperType	src/org/smof/parsers/SmofTypeContext.java	/^	private boolean containsSubOrSuperType(Class<?> type) {$/;"	m	class:SmofTypeContext	file:
+context	src/org/smof/parsers/SmofParser.java	/^	private final SmofTypeContext context;$/;"	f	class:SmofParser	file:
+contextContains	src/org/smof/parsers/ObjectParser.java	/^	private boolean contextContains(Object value, SmofField fieldOpts, final SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+count	src/org/smof/collection/SmofResults.java	/^	public long count() {$/;"	m	class:SmofResults
+create	src/org/smof/collection/CollectionOptions.java	/^	static <E extends Element> CollectionOptions<E> create() {$/;"	m	interface:CollectionOptions
+create	src/org/smof/collection/Smof.java	/^	public static Smof create(MongoDatabase database) {$/;"	m	class:Smof
+create	src/org/smof/collection/Smof.java	/^	public static Smof create(String host, int port, String databaseName) {$/;"	m	class:Smof
+create	src/org/smof/collection/SmofOpOptions.java	/^	public static SmofOpOptions create() {$/;"	m	class:SmofOpOptions
+create	src/org/smof/parsers/LazyLoader.java	/^	static LazyLoader create(SmofDispatcher dispatcher) {$/;"	m	class:LazyLoader
+create	src/org/smof/parsers/SerializationContext.java	/^	public static SerializationContext create() {$/;"	m	class:SerializationContext
+create	src/org/smof/parsers/SmofParserPool.java	/^	public static SmofParserPool create(SmofParser parserContext, SmofDispatcher dispatcher) {$/;"	m	class:SmofParserPool
+create	src/org/smof/parsers/TypeBuilder.java	/^	static <T> TypeBuilder<T> create(Class<T> type) {$/;"	m	class:TypeBuilder
+create	src/org/smof/parsers/TypeBuilder.java	/^	static <T> TypeBuilder<T> create(Class<T> type, Object factory) {$/;"	m	class:TypeBuilder
+create	src/org/smof/parsers/TypeParser.java	/^	static <T> TypeParser<T> create(Class<T> type) {$/;"	m	class:TypeParser
+createCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void createCollection(String collectionName, Class<T> elClass) {$/;"	m	class:Smof
+createCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void createCollection(String collectionName, Class<T> elClass, CollectionOptions<T> options) {$/;"	m	class:Smof
+createCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void createCollection(String collectionName, Class<T> elClass, Object factory) {$/;"	m	class:Smof
+createCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void createCollection(String collectionName, Class<T> elClass, Object factory, CollectionOptions<T> options) {$/;"	m	class:Smof
+createCollection	src/org/smof/parsers/ArrayParser.java	/^	private <T> Collection<Object> createCollection(Class<?> collectionClass) {$/;"	m	class:ArrayParser	file:
+createCollection	src/org/smof/parsers/ByteParser.java	/^	private Collection<Byte> createCollection(Class<?> collectionClass) {$/;"	m	class:ByteParser	file:
+createFilterFromIndex	src/org/smof/collection/SmofCollectionImpl.java	/^	private Bson createFilterFromIndex(InternalIndex index, BsonDocument element) {$/;"	m	class:SmofCollectionImpl	file:
+createInstance	src/org/smof/parsers/LazyLoader.java	/^	private <T extends Element, E extends T> T createInstance(Class<T> type, Class<E> lazyType, ObjectId id){$/;"	m	class:LazyLoader	file:
+createLazyClass	src/org/smof/parsers/LazyLoader.java	/^	private <T> Class<? extends T> createLazyClass(Class<T> type) {$/;"	m	class:LazyLoader	file:
+createLazyInstance	src/org/smof/parsers/LazyLoader.java	/^	public <T extends Element> T createLazyInstance(Class<T> type, ObjectId id) {$/;"	m	class:LazyLoader
+createLazyInstance	src/org/smof/parsers/SmofParser.java	/^	<T extends Element> T createLazyInstance(Class<T> type, ObjectId id) {$/;"	m	class:SmofParser
+createLazySubClass	src/org/smof/parsers/LazyLoader.java	/^	private <T extends Element> Class<? extends T> createLazySubClass(Class<T> type) {$/;"	m	class:LazyLoader	file:
+createLazyType	src/org/smof/parsers/LazyLoader.java	/^	private <T extends Element> Class<? extends T> createLazyType(Class<T> type) {$/;"	m	class:LazyLoader	file:
+createOptions	src/org/smof/index/InternalIndex.java	/^	private static IndexOptions createOptions(BsonDocument doc) {$/;"	m	class:InternalIndex	file:
+createOptions	src/org/smof/index/InternalIndex.java	/^	private static IndexOptions createOptions(SmofIndex note) {$/;"	m	class:InternalIndex	file:
+createOptions	src/org/smof/index/PartialIndex.java	/^	private static IndexOptions createOptions(BsonDocument doc) {$/;"	m	class:PartialIndex	file:
+createOptions	src/org/smof/index/PartialIndex.java	/^	public static IndexOptions createOptions(SmofPartialIndex note) {$/;"	m	class:PartialIndex
+createParsers	src/org/smof/parsers/SmofParserPool.java	/^	private void createParsers(SmofParser parserContext, SmofDispatcher dispatcher) {$/;"	m	class:SmofParserPool	file:
+createRawIndexes	src/org/smof/index/InternalIndex.java	/^	private static Set<Bson> createRawIndexes(BsonDocument doc) {$/;"	m	class:InternalIndex	file:
+createRawIndexes	src/org/smof/index/InternalIndex.java	/^	private static Set<Bson> createRawIndexes(SmofIndexField[] fields) {$/;"	m	class:InternalIndex	file:
+createRawIndexes	src/org/smof/index/PartialIndex.java	/^	private static Set<Bson> createRawIndexes(BsonDocument doc) {$/;"	m	class:PartialIndex	file:
+createRawIndexes	src/org/smof/index/PartialIndex.java	/^	private static Set<Bson> createRawIndexes(SmofIndexField[] fields) {$/;"	m	class:PartialIndex	file:
+createUniquenessQuery	src/org/smof/collection/SmofCollectionImpl.java	/^	private Bson createUniquenessQuery(BsonDocument element) {$/;"	m	class:SmofCollectionImpl	file:
+database	src/org/smof/collection/Smof.java	/^	private final MongoDatabase database;$/;"	f	class:Smof	file:
+defaultTypeBuilder	src/org/smof/parsers/TypeStructure.java	/^	private final TypeBuilder<T> defaultTypeBuilder;$/;"	f	class:TypeStructure	file:
+delegate	src/org/smof/parsers/LazyLoader.java	/^		private Object delegate;$/;"	f	class:LazyLoader.Handler	file:
+delegateClass	src/org/smof/parsers/LazyLoader.java	/^		private final Class<T> delegateClass;$/;"	f	class:LazyLoader.Handler	file:
+dispatcher	src/org/smof/collection/Smof.java	/^	private final SmofDispatcher dispatcher;$/;"	f	class:Smof	file:
+dispatcher	src/org/smof/parsers/AbstractBsonParser.java	/^	protected final SmofDispatcher dispatcher;$/;"	f	class:AbstractBsonParser
+dispatcher	src/org/smof/parsers/LazyLoader.java	/^		private final SmofDispatcher dispatcher;$/;"	f	class:LazyLoader.Handler	file:
+dispatcher	src/org/smof/parsers/LazyLoader.java	/^	private final SmofDispatcher dispatcher;$/;"	f	class:LazyLoader	file:
+document	src/org/smof/collection/SmofResults.java	/^		private final BsonDocument document;$/;"	f	class:SmofResults.DocumentParser	file:
+dotted	src/org/smof/element/Element.java	/^	static String dotted(String... fields) {$/;"	m	interface:Element
+download	src/org/smof/gridfs/SmofGridStreamManager.java	/^	InputStream download(SmofGridRef ref);$/;"	m	interface:SmofGridStreamManager
+download	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public InputStream download(SmofGridRef ref) {$/;"	m	class:SmofGridStreamManagerImpl
+downloadToFile	src/org/smof/gridfs/SmofGridStreamManager.java	/^	public void downloadToFile(SmofGridRef ref, Path path) throws IOException;$/;"	m	interface:SmofGridStreamManager
+downloadToFile	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public void downloadToFile(SmofGridRef ref, Path path) throws IOException {$/;"	m	class:SmofGridStreamManagerImpl
+drop	src/org/smof/gridfs/SmofGridStreamManager.java	/^	void drop(SmofGridRef ref);$/;"	m	interface:SmofGridStreamManager
+drop	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public void drop(SmofGridRef ref) {$/;"	m	class:SmofGridStreamManagerImpl
+dropAllBuckets	src/org/smof/collection/Smof.java	/^	public void dropAllBuckets() {$/;"	m	class:Smof
+dropAllCollections	src/org/smof/collection/Smof.java	/^	public void dropAllCollections() {$/;"	m	class:Smof
+dropBucket	src/org/smof/collection/Smof.java	/^	public void dropBucket(String bucketName) {$/;"	m	class:Smof
+dropCollection	src/org/smof/collection/Smof.java	/^	public boolean dropCollection(String collectionName) {$/;"	m	class:Smof
+elClass	src/org/smof/collection/SmofResults.java	/^	private final Class<T> elClass;$/;"	f	class:SmofResults	file:
+element	src/org/smof/parsers/BsonLazyObjectId.java	/^	private final Element element;$/;"	f	class:BsonLazyObjectId	file:
+elementClass	src/org/smof/collection/AbstractSmofQuery.java	/^	private final Class<T> elementClass;$/;"	f	class:AbstractSmofQuery	file:
+elementClass	src/org/smof/field/MasterField.java	/^	private final Class<?> elementClass;$/;"	f	class:MasterField	file:
+endAnd	src/org/smof/collection/AndQuery.java	/^	public SmofQuery<T> endAnd() {$/;"	m	class:AndQuery
+endOr	src/org/smof/collection/OrQuery.java	/^	public SmofQuery<T> endOr() {$/;"	m	class:OrQuery
+equals	src/org/smof/element/AbstractElement.java	/^	public boolean equals(Object obj) {$/;"	m	class:AbstractElement
+equals	src/org/smof/field/PrimaryField.java	/^	public boolean equals(Object obj) {$/;"	m	class:PrimaryField
+equals	src/org/smof/index/InternalIndex.java	/^	public boolean equals(Object obj) {$/;"	m	class:InternalIndex
+execUpdate	src/org/smof/collection/SmofCollection.java	/^	void execUpdate(Bson filter, Bson updates, SmofOpOptions options);$/;"	m	interface:SmofCollection
+execUpdate	src/org/smof/collection/SmofCollectionImpl.java	/^	public void execUpdate(Bson filter, Bson update, SmofOpOptions options) {$/;"	m	class:SmofCollectionImpl
+execute	src/org/smof/collection/SmofUpdateQuery.java	/^	public void execute() {$/;"	m	class:SmofUpdateQuery
+exists	src/org/smof/annnotations/OperatorType.java	/^	exists("exists");$/;"	e	enum:OperatorType	file:
+expression	src/org/smof/annnotations/SmofPFEQuery.java	/^	SmofQueryA[] expression();$/;"	m	interface:SmofPFEQuery
+external	src/org/smof/field/PrimaryField.java	/^	private final boolean external;$/;"	f	class:PrimaryField	file:
+extrackPosInsertions	src/org/smof/utils/BsonUtils.java	/^	public final static Stack<Pair<String, Element>> extrackPosInsertions(BsonDocument doc) {$/;"	m	class:BsonUtils
+extractValue	src/org/smof/parsers/ObjectParser.java	/^	private Object extractValue(Object element, PrimaryField field) {$/;"	m	class:ObjectParser	file:
+false	src/org/smof/annnotations/SmofArray.java	/^	public boolean required() default false;$/;"	f	interface:SmofArray
+false	src/org/smof/annnotations/SmofBoolean.java	/^	boolean required() default false;$/;"	f	interface:SmofBoolean
+false	src/org/smof/annnotations/SmofByte.java	/^	boolean required() default false;$/;"	f	interface:SmofByte
+false	src/org/smof/annnotations/SmofDate.java	/^	public boolean required() default false;$/;"	f	interface:SmofDate
+false	src/org/smof/annnotations/SmofIndex.java	/^	boolean unique() default false;$/;"	f	interface:SmofIndex
+false	src/org/smof/annnotations/SmofNumber.java	/^	public boolean required() default false;$/;"	f	interface:SmofNumber
+false	src/org/smof/annnotations/SmofObject.java	/^	boolean required() default false;$/;"	f	interface:SmofObject
+false	src/org/smof/annnotations/SmofObjectId.java	/^	public boolean required() default false;$/;"	f	interface:SmofObjectId
+false	src/org/smof/annnotations/SmofString.java	/^	boolean required() default false;$/;"	f	interface:SmofString
+field	src/org/smof/field/PrimaryField.java	/^	private final Field field;$/;"	f	class:PrimaryField	file:
+fieldClass	src/org/smof/field/SecondaryField.java	/^	private final Class<?> fieldClass;$/;"	f	class:SecondaryField	file:
+fieldEq	src/org/smof/collection/SmofUpdateQuery.java	/^	public SmofUpdateQuery<T> fieldEq(String fieldName, Object value) {$/;"	m	class:SmofUpdateQuery
+fieldName	src/org/smof/parsers/BsonLazyObjectId.java	/^	private final String fieldName;$/;"	f	class:BsonLazyObjectId	file:
+fields	src/org/smof/annnotations/SmofIndex.java	/^	SmofIndexField[] fields();$/;"	m	interface:SmofIndex
+fields	src/org/smof/annnotations/SmofPartialIndex.java	/^	SmofIndexField[] fields();$/;"	m	interface:SmofPartialIndex
+fields	src/org/smof/annnotations/SmofPartialIndexes.java	/^	SmofPartialIndex[] fields();$/;"	m	interface:SmofPartialIndexes
+fields	src/org/smof/collection/SmofUpdate.java	/^	private final Map<String, PrimaryField> fields;$/;"	f	class:SmofUpdate	file:
+fields	src/org/smof/collection/SmofUpdateQuery.java	/^	private final Map<String, PrimaryField> fields;$/;"	f	class:SmofUpdateQuery	file:
+fields	src/org/smof/parsers/BsonBuilder.java	/^	private final Document fields;$/;"	f	class:BsonBuilder	file:
+fields	src/org/smof/parsers/TypeParser.java	/^	private final Map<String, PrimaryField> fields;$/;"	f	class:TypeParser	file:
+fillElement	src/org/smof/parsers/BsonBuilder.java	/^	void fillElement(T element) {$/;"	m	class:BsonBuilder
+fillFields	src/org/smof/parsers/TypeParser.java	/^	private void fillFields() {$/;"	m	class:TypeParser	file:
+fillIndexes	src/org/smof/parsers/TypeStructure.java	/^	private void fillIndexes() {$/;"	m	class:TypeStructure	file:
+fillObject	src/org/smof/parsers/ObjectParser.java	/^	private <T> void fillObject(BsonDocument document, final BsonBuilder<T> builder, final T obj) {$/;"	m	class:ObjectParser	file:
+filter	src/org/smof/collection/AbstractSmofQuery.java	/^	private final BsonDocument filter;$/;"	f	class:AbstractSmofQuery	file:
+filter	src/org/smof/collection/SmofResults.java	/^	private final Bson filter;$/;"	f	class:SmofResults	file:
+filter	src/org/smof/collection/SmofUpdateQuery.java	/^	private BsonDocument filter;$/;"	f	class:SmofUpdateQuery	file:
+filters	src/org/smof/collection/AndQuery.java	/^	private final List<Bson> filters;$/;"	f	class:AndQuery	file:
+filters	src/org/smof/collection/OrQuery.java	/^	private final List<Bson> filters;$/;"	f	class:OrQuery	file:
+find	src/org/smof/collection/Smof.java	/^	public <T extends Element> SmofQuery<T> find(Class<T> elementClass) {$/;"	m	class:Smof
+findById	src/org/smof/collection/SmofCollection.java	/^	T findById(ObjectId id);$/;"	m	interface:SmofCollection
+findById	src/org/smof/collection/SmofCollectionImpl.java	/^	public T findById(ObjectId id) {$/;"	m	class:SmofCollectionImpl
+findById	src/org/smof/collection/SmofDispatcher.java	/^	public <T extends Element> T findById(ObjectId id, Class<T> elementClass) {$/;"	m	class:SmofDispatcher
+first	src/org/smof/collection/SmofResults.java	/^	public T first() {$/;"	m	class:SmofResults
+fromArray	src/org/smof/parsers/ArrayParser.java	/^	private BsonValue fromArray(Object[] values, SecondaryField componentField) {$/;"	m	class:ArrayParser	file:
+fromBoolean	src/org/smof/parsers/BooleanParser.java	/^	private BsonValue fromBoolean(Boolean value) {$/;"	m	class:BooleanParser	file:
+fromBson	src/org/smof/index/InternalIndex.java	/^	public static InternalIndex fromBson(BsonDocument doc) {$/;"	m	class:InternalIndex
+fromBson	src/org/smof/index/PartialIndex.java	/^	public static PartialIndex fromBson(BsonDocument pi){$/;"	m	class:PartialIndex
+fromBson	src/org/smof/parsers/AbstractBsonParser.java	/^	public abstract <T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts);$/;"	m	class:AbstractBsonParser
+fromBson	src/org/smof/parsers/ArrayParser.java	/^	public <T> T fromBson(BsonValue rawValue, Class<T> type, SmofField fieldOpts) {$/;"	m	class:ArrayParser
+fromBson	src/org/smof/parsers/BooleanParser.java	/^	public <T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts) {$/;"	m	class:BooleanParser
+fromBson	src/org/smof/parsers/BsonParser.java	/^	<T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts);$/;"	m	interface:BsonParser
+fromBson	src/org/smof/parsers/ByteParser.java	/^	public <T> T fromBson(BsonValue rawValue, Class<T> type, SmofField fieldOpts) {$/;"	m	class:ByteParser
+fromBson	src/org/smof/parsers/DateTimeParser.java	/^	public <T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts) {$/;"	m	class:DateTimeParser
+fromBson	src/org/smof/parsers/NumberParser.java	/^	public <T> T fromBson(BsonValue rawValue, Class<T> type, SmofField fieldOpts) {$/;"	m	class:NumberParser
+fromBson	src/org/smof/parsers/ObjectIdParser.java	/^	public <T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts) {$/;"	m	class:ObjectIdParser
+fromBson	src/org/smof/parsers/ObjectParser.java	/^	public <T> T fromBson(BsonValue value, Class<T> type, SmofField fieldOpts) {$/;"	m	class:ObjectParser
+fromBson	src/org/smof/parsers/SmofParser.java	/^	Object fromBson(BsonValue value, SmofField field) {$/;"	m	class:SmofParser
+fromBson	src/org/smof/parsers/SmofParser.java	/^	private Object fromBson(BsonParser parser, BsonValue value, Class<?> type, SmofField field) {$/;"	m	class:SmofParser	file:
+fromBson	src/org/smof/parsers/SmofParser.java	/^	public <T extends Element> T fromBson(BsonDocument document, Class<T> type) {$/;"	m	class:SmofParser
+fromBson	src/org/smof/parsers/StringParser.java	/^	public <T> T fromBson(BsonValue rawValue, Class<T> type, SmofField fieldOpts) {$/;"	m	class:StringParser
+fromCollection	src/org/smof/parsers/ArrayParser.java	/^	private Object[] fromCollection(Collection<?> value) {$/;"	m	class:ArrayParser	file:
+fromCollection	src/org/smof/parsers/ByteParser.java	/^	private BsonBinary fromCollection(Collection<Byte> value) {$/;"	m	class:ByteParser	file:
+fromElement	src/org/smof/collection/SmofUpdate.java	/^	public void fromElement(T element) {$/;"	m	class:SmofUpdate
+fromElement	src/org/smof/parsers/ObjectParser.java	/^	private BsonValue fromElement(Element value, PrimaryField fieldOpts, SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+fromElement	src/org/smof/parsers/ObjectParser.java	/^	private BsonValue fromElement(Element value, SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+fromEnum	src/org/smof/parsers/ObjectParser.java	/^	private BsonDocument fromEnum(Enum<?> value, SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+fromEnum	src/org/smof/parsers/StringParser.java	/^	private String fromEnum(Object value) {$/;"	m	class:StringParser	file:
+fromGenericByteArray	src/org/smof/parsers/ByteParser.java	/^	private BsonBinary fromGenericByteArray(Byte[] value) {$/;"	m	class:ByteParser	file:
+fromGridRef	src/org/smof/parsers/ObjectParser.java	/^	private BsonValue fromGridRef(SmofGridRef fileRef, PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+fromIndexes	src/org/smof/index/InternalIndex.java	/^	private Bson fromIndexes(List<Bson> indexes) {$/;"	m	class:InternalIndex	file:
+fromIndexes	src/org/smof/index/PartialIndex.java	/^	private Bson fromIndexes(List<Bson> indexes) {$/;"	m	class:PartialIndex	file:
+fromJavaInstant	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJavaInstant(Instant value) {$/;"	m	class:DateTimeParser	file:
+fromJavaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJavaLocalDate(LocalDate value) {$/;"	m	class:DateTimeParser	file:
+fromJavaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJavaLocalDateTime(LocalDateTime value) {$/;"	m	class:DateTimeParser	file:
+fromJavaZoneDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJavaZoneDateTime(ZonedDateTime value) {$/;"	m	class:DateTimeParser	file:
+fromJodaDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJodaDateTime(DateTime value) {$/;"	m	class:DateTimeParser	file:
+fromJodaInstant	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJodaInstant(org.joda.time.Instant value) {$/;"	m	class:DateTimeParser	file:
+fromJodaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJodaLocalDate(org.joda.time.LocalDate value) {$/;"	m	class:DateTimeParser	file:
+fromJodaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private long fromJodaLocalDateTime(org.joda.time.LocalDateTime value) {$/;"	m	class:DateTimeParser	file:
+fromMap	src/org/smof/parsers/ObjectParser.java	/^	private BsonDocument fromMap(Map<?, ?> value, PrimaryField mapField, SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+fromMasterField	src/org/smof/parsers/ObjectParser.java	/^	private BsonDocument fromMasterField(Element value, SmofField fieldOpts, SerializationContext serContext) {$/;"	m	class:ObjectParser	file:
+fromObject	src/org/smof/parsers/ObjectParser.java	/^	private BsonDocument fromObject(Object value) {$/;"	m	class:ObjectParser	file:
+fromPrimitiveByteArray	src/org/smof/parsers/ByteParser.java	/^	private BsonBinary fromPrimitiveByteArray(byte[] value) {$/;"	m	class:ByteParser	file:
+fromSmofIndex	src/org/smof/index/InternalIndex.java	/^	public static InternalIndex fromSmofIndex(SmofIndex note) {$/;"	m	class:InternalIndex
+fromSmofIndex	src/org/smof/index/PartialIndex.java	/^	public static PartialIndex fromSmofIndex(SmofPartialIndex note) {$/;"	m	class:PartialIndex
+fromSmofIndexField	src/org/smof/index/InternalIndex.java	/^	private static Bson fromSmofIndexField(SmofIndexField field) {$/;"	m	class:InternalIndex	file:
+fromSmofIndexField	src/org/smof/index/PartialIndex.java	/^	private static Bson fromSmofIndexField(SmofIndexField smofIndexField) {$/;"	m	class:PartialIndex	file:
+fromSmofIndexFields	src/org/smof/index/InternalIndex.java	/^	private static List<Bson> fromSmofIndexFields(SmofIndexField[] fields) {$/;"	m	class:InternalIndex	file:
+fromSmofIndexFields	src/org/smof/index/PartialIndex.java	/^	private static List<Bson> fromSmofIndexFields(SmofIndexField[] fields) {$/;"	m	class:PartialIndex	file:
+fsBuckets	src/org/smof/collection/CollectionsPool.java	/^	private final Map<String, GridFSBucket> fsBuckets;$/;"	f	class:CollectionsPool	file:
+get	src/org/smof/parsers/SerializationContext.java	/^	BsonValue get(Object object, SmofType type) {$/;"	m	class:SerializationContext
+get	src/org/smof/parsers/SmofParserPool.java	/^	public BsonParser get(SmofType type) {$/;"	m	class:SmofParserPool
+getAllBuckets	src/org/smof/collection/CollectionsPool.java	/^	public Iterable<String> getAllBuckets() {$/;"	m	class:CollectionsPool
+getAllFields	src/org/smof/parsers/TypeParser.java	/^	public Collection<PrimaryField> getAllFields() {$/;"	m	class:TypeParser
+getAllFields	src/org/smof/parsers/TypeStructure.java	/^	public Map<String, PrimaryField> getAllFields() {$/;"	m	class:TypeStructure
+getAnnotClass	src/org/smof/parsers/SmofType.java	/^	public Class<? extends Annotation> getAnnotClass() {$/;"	m	class:SmofType
+getAttachedByteArray	src/org/smof/gridfs/SmofGridRef.java	/^	public ByteArrayInputStream getAttachedByteArray();$/;"	m	interface:SmofGridRef
+getAttachedByteArray	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public ByteArrayInputStream getAttachedByteArray() {$/;"	m	class:SmofGridRefImpl
+getAttachedFile	src/org/smof/gridfs/SmofGridRef.java	/^	public Path getAttachedFile();$/;"	m	interface:SmofGridRef
+getAttachedFile	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public Path getAttachedFile() {$/;"	m	class:SmofGridRefImpl
+getBucket	src/org/smof/collection/CollectionsPool.java	/^	public GridFSBucket getBucket(String bucketName) {$/;"	m	class:CollectionsPool
+getBucketName	src/org/smof/gridfs/SmofGridRef.java	/^	public String getBucketName();$/;"	m	interface:SmofGridRef
+getBucketName	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public String getBucketName() {$/;"	m	class:SmofGridRefImpl
+getBuilder	src/org/smof/parsers/TypeStructure.java	/^	public TypeBuilder<T> getBuilder() {$/;"	m	class:TypeStructure
+getBuilderMethod	src/org/smof/parsers/TypeBuilder.java	/^	private static Method getBuilderMethod(Class<?> type) {$/;"	m	class:TypeBuilder	file:
+getCollection	src/org/smof/collection/CollectionsPool.java	/^	public <T extends Element> SmofCollection<T> getCollection(Class<T> elClass) {$/;"	m	class:CollectionsPool
+getCollectionField	src/org/smof/parsers/ArrayParser.java	/^	private SecondaryField getCollectionField(PrimaryField fieldOpts) {$/;"	m	class:ArrayParser	file:
+getCollectionName	src/org/smof/collection/SmofCollection.java	/^	String getCollectionName();$/;"	m	interface:SmofCollection
+getCollectionName	src/org/smof/collection/SmofCollectionImpl.java	/^	public String getCollectionName() {$/;"	m	class:SmofCollectionImpl
+getCollectionOptions	src/org/smof/collection/SmofCollection.java	/^	CollectionOptions<T> getCollectionOptions();$/;"	m	interface:SmofCollection
+getCollectionOptions	src/org/smof/collection/SmofCollectionImpl.java	/^	public CollectionOptions<T> getCollectionOptions() {$/;"	m	class:SmofCollectionImpl
+getCollectionType	src/org/smof/parsers/ArrayParser.java	/^	private Class<?> getCollectionType(Field collType) {$/;"	m	class:ArrayParser	file:
+getCollectionType	src/org/smof/parsers/ByteParser.java	/^	private Class<?> getCollectionType(Field collType) {$/;"	m	class:ByteParser	file:
+getConstraints	src/org/smof/collection/CollectionOptions.java	/^	Iterable<Predicate<E>> getConstraints();$/;"	m	interface:CollectionOptions
+getConstraints	src/org/smof/collection/CollectionOptionsImpl.java	/^	public Iterable<Predicate<E>> getConstraints() {$/;"	m	class:CollectionOptionsImpl
+getConstructor	src/org/smof/parsers/TypeBuilder.java	/^	private static <T> Constructor<T> getConstructor(Class<T> type) {$/;"	m	class:TypeBuilder	file:
+getContext	src/org/smof/parsers/SmofParser.java	/^	SmofTypeContext getContext() {$/;"	m	class:SmofParser
+getDeclaredFields	src/org/smof/parsers/TypeParser.java	/^	private List<Field> getDeclaredFields(Class<?> type) {$/;"	m	class:TypeParser	file:
+getElement	src/org/smof/parsers/BsonLazyObjectId.java	/^	public Element getElement() {$/;"	m	class:BsonLazyObjectId
+getElementClass	src/org/smof/collection/AbstractSmofQuery.java	/^	public Class<T> getElementClass() {$/;"	m	class:AbstractSmofQuery
+getElementClass	src/org/smof/collection/FilterQuery.java	/^	Class<E> getElementClass();$/;"	m	interface:FilterQuery
+getExternalFields	src/org/smof/parsers/TypeParser.java	/^	public Set<PrimaryField> getExternalFields() {$/;"	m	class:TypeParser
+getFactoryMethod	src/org/smof/parsers/TypeBuilder.java	/^	private static Method getFactoryMethod(Class<?> type, Object object) {$/;"	m	class:TypeBuilder	file:
+getField	src/org/smof/parsers/SmofParser.java	/^	public SmofField getField(Class<?> type, String fieldName) {$/;"	m	class:SmofParser
+getFieldClass	src/org/smof/field/MasterField.java	/^	public Class<?> getFieldClass() {$/;"	m	class:MasterField
+getFieldClass	src/org/smof/field/ParameterField.java	/^	public Class<?> getFieldClass() {$/;"	m	class:ParameterField
+getFieldClass	src/org/smof/field/PrimaryField.java	/^	public Class<?> getFieldClass() {$/;"	m	class:PrimaryField
+getFieldClass	src/org/smof/field/SecondaryField.java	/^	public Class<?> getFieldClass() {$/;"	m	class:SecondaryField
+getFieldClass	src/org/smof/field/SmofField.java	/^	Class<?> getFieldClass();$/;"	m	interface:SmofField
+getFieldName	src/org/smof/parsers/BsonLazyObjectId.java	/^	public String getFieldName() {$/;"	m	class:BsonLazyObjectId
+getFieldsAsMap	src/org/smof/parsers/TypeParser.java	/^	public Map<String, PrimaryField> getFieldsAsMap() {$/;"	m	class:TypeParser
+getFilter	src/org/smof/collection/AbstractSmofQuery.java	/^	protected BsonDocument getFilter() {$/;"	m	class:AbstractSmofQuery
+getFromDocument	src/org/smof/parsers/ObjectParser.java	/^	private BsonValue getFromDocument(BsonDocument document, String field) {$/;"	m	class:ObjectParser	file:
+getGridStreamManager	src/org/smof/collection/Smof.java	/^	public SmofGridStreamManager getGridStreamManager() {$/;"	m	class:Smof
+getHandler	src/org/smof/parsers/LazyLoader.java	/^		InvocationHandler getHandler();$/;"	m	interface:LazyLoader.HandlerSetter
+getId	src/org/smof/element/AbstractElement.java	/^	public ObjectId getId() {$/;"	m	class:AbstractElement
+getId	src/org/smof/element/Element.java	/^	ObjectId getId();$/;"	m	interface:Element
+getIdAsString	src/org/smof/element/AbstractElement.java	/^	public String getIdAsString() {$/;"	m	class:AbstractElement
+getIdAsString	src/org/smof/element/Element.java	/^	String getIdAsString();$/;"	m	interface:Element
+getIndex	src/org/smof/index/InternalIndex.java	/^	public Bson getIndex() {$/;"	m	class:InternalIndex
+getIndex	src/org/smof/index/PartialIndex.java	/^	public Bson getIndex() {$/;"	m	class:PartialIndex
+getIndexNotes	src/org/smof/parsers/TypeStructure.java	/^	private SmofIndex[] getIndexNotes() {$/;"	m	class:TypeStructure	file:
+getIndexes	src/org/smof/parsers/SmofParser.java	/^	public <T extends Element> Set<InternalIndex> getIndexes(Class<T> elClass) {$/;"	m	class:SmofParser
+getIndexes	src/org/smof/parsers/SmofTypeContext.java	/^	<T extends Element> Set<InternalIndex> getIndexes(Class<T> elClass) {$/;"	m	class:SmofTypeContext
+getIndexes	src/org/smof/parsers/TypeStructure.java	/^	public Set<InternalIndex> getIndexes() {$/;"	m	class:TypeStructure
+getLazyType	src/org/smof/parsers/LazyLoader.java	/^	private <T extends Element> Class<? extends T> getLazyType(Class<T> type) {$/;"	m	class:LazyLoader	file:
+getMapFields	src/org/smof/parsers/ObjectParser.java	/^	private Pair<SecondaryField, SecondaryField> getMapFields(PrimaryField mapMetadata) {$/;"	m	class:ObjectParser	file:
+getMapValueType	src/org/smof/parsers/ObjectParser.java	/^	private SmofType getMapValueType(PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+getMetadata	src/org/smof/gridfs/SmofGridRef.java	/^	public Document getMetadata();$/;"	m	interface:SmofGridRef
+getMetadata	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public Document getMetadata() {$/;"	m	class:SmofGridRefImpl
+getMongoCollection	src/org/smof/collection/SmofCollection.java	/^	MongoCollection<BsonDocument> getMongoCollection();$/;"	m	interface:SmofCollection
+getMongoCollection	src/org/smof/collection/SmofCollectionImpl.java	/^	public MongoCollection<BsonDocument> getMongoCollection() {$/;"	m	class:SmofCollectionImpl
+getMongoToken	src/org/smof/annnotations/OperatorType.java	/^	public String getMongoToken() {$/;"	m	class:OperatorType
+getMongoToken	src/org/smof/index/IndexType.java	/^	public String getMongoToken() {$/;"	m	class:IndexType
+getName	src/org/smof/field/MasterField.java	/^	public String getName() {$/;"	m	class:MasterField
+getName	src/org/smof/field/ParameterField.java	/^	public String getName() {$/;"	m	class:ParameterField
+getName	src/org/smof/field/PrimaryField.java	/^	public String getName() {$/;"	m	class:PrimaryField
+getName	src/org/smof/field/SecondaryField.java	/^	public String getName() {$/;"	m	class:SecondaryField
+getName	src/org/smof/field/SmofField.java	/^	String getName();$/;"	m	interface:SmofField
+getNonBuilderFields	src/org/smof/parsers/TypeParser.java	/^	public Set<PrimaryField> getNonBuilderFields() {$/;"	m	class:TypeParser
+getOperator	src/org/smof/collection/Operators.java	/^	public String getOperator() {$/;"	m	class:Operators
+getOptions	src/org/smof/index/InternalIndex.java	/^	public IndexOptions getOptions() {$/;"	m	class:InternalIndex
+getOptions	src/org/smof/index/PartialIndex.java	/^	public IndexOptions getOptions() {$/;"	m	class:PartialIndex
+getOrCreateParser	src/org/smof/parsers/SmofTypeContext.java	/^	private <T> TypeStructure<T> getOrCreateParser(Class<?> type, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+getParamAnnotations	src/org/smof/parsers/TypeBuilder.java	/^	private List<ParameterField> getParamAnnotations(Parameter[] params) {$/;"	m	class:TypeBuilder	file:
+getParamNames	src/org/smof/parsers/TypeBuilder.java	/^	List<String> getParamNames() {$/;"	m	class:TypeBuilder
+getParams	src/org/smof/parsers/TypeBuilder.java	/^	List<ParameterField> getParams() {$/;"	m	class:TypeBuilder
+getParser	src/org/smof/collection/AbstractSmofQuery.java	/^	protected SmofParser getParser() {$/;"	m	class:AbstractSmofQuery
+getParser	src/org/smof/collection/SmofCollection.java	/^	SmofParser getParser();$/;"	m	interface:SmofCollection
+getParser	src/org/smof/collection/SmofCollectionImpl.java	/^	public SmofParser getParser() {$/;"	m	class:SmofCollectionImpl
+getParser	src/org/smof/parsers/TypeStructure.java	/^	public <E> TypeParser<E> getParser(Class<E> type) {$/;"	m	class:TypeStructure
+getParsers	src/org/smof/parsers/SmofParser.java	/^	SmofParserPool getParsers() {$/;"	m	class:SmofParser
+getPartialIndexNotes	src/org/smof/parsers/TypeStructure.java	/^	private SmofPartialIndex[] getPartialIndexNotes() {$/;"	m	class:TypeStructure	file:
+getPartialIndexes	src/org/smof/parsers/SmofParser.java	/^	public <T extends Element> Collection getPartialIndexes(Class<T> elClass) {$/;"	m	class:SmofParser
+getPartialIndexes	src/org/smof/parsers/SmofTypeContext.java	/^	public <T extends Element> Set<PartialIndex> getPartialIndexes(Class<T> elClass) {$/;"	m	class:SmofTypeContext
+getPartialIndexes	src/org/smof/parsers/TypeStructure.java	/^	public Set<PartialIndex> getPartialIndexes() {$/;"	m	class:TypeStructure
+getPostInserts	src/org/smof/collection/SmofInsertResult.java	/^	public Stack<Pair<String, Element>> getPostInserts() {$/;"	m	class:SmofInsertResult
+getPrimaryField	src/org/smof/field/ParameterField.java	/^	public PrimaryField getPrimaryField() {$/;"	m	class:ParameterField
+getRawField	src/org/smof/field/PrimaryField.java	/^	public Field getRawField() {$/;"	m	class:PrimaryField
+getSerializationContext	src/org/smof/parsers/SmofParser.java	/^	SerializationContext getSerializationContext() {$/;"	m	class:SmofParser
+getSmofAnnotationAs	src/org/smof/field/PrimaryField.java	/^	public <T extends Annotation> T getSmofAnnotationAs(Class<T> annotationType) {$/;"	m	class:PrimaryField
+getStaticMethod	src/org/smof/parsers/TypeBuilder.java	/^	private static Method getStaticMethod(Class<?> type) {$/;"	m	class:TypeBuilder	file:
+getStorageTime	src/org/smof/element/AbstractElement.java	/^	public LocalDateTime getStorageTime() {$/;"	m	class:AbstractElement
+getStorageTime	src/org/smof/element/Element.java	/^	LocalDateTime getStorageTime();$/;"	m	interface:Element
+getStorageTime	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public LocalDateTime getStorageTime() {$/;"	m	class:SmofGridRefImpl
+getType	src/org/smof/collection/SmofCollection.java	/^	Class<T> getType();$/;"	m	interface:SmofCollection
+getType	src/org/smof/collection/SmofCollectionImpl.java	/^	public Class<T> getType() {$/;"	m	class:SmofCollectionImpl
+getType	src/org/smof/field/MasterField.java	/^	public SmofType getType() {$/;"	m	class:MasterField
+getType	src/org/smof/field/ParameterField.java	/^	public SmofType getType() {$/;"	m	class:ParameterField
+getType	src/org/smof/field/PrimaryField.java	/^	public SmofType getType() {$/;"	m	class:PrimaryField
+getType	src/org/smof/field/SecondaryField.java	/^	public SmofType getType() {$/;"	m	class:SecondaryField
+getType	src/org/smof/field/SmofField.java	/^	SmofType getType();$/;"	m	interface:SmofField
+getType	src/org/smof/parsers/TypeParser.java	/^	public Class<T> getType() {$/;"	m	class:TypeParser
+getTypeBuilder	src/org/smof/parsers/AbstractBsonParser.java	/^	protected <T> TypeBuilder<T> getTypeBuilder(Class<T> type) {$/;"	m	class:AbstractBsonParser
+getTypeParser	src/org/smof/parsers/AbstractBsonParser.java	/^	protected <T> TypeParser<T> getTypeParser(Class<T> type) {$/;"	m	class:AbstractBsonParser
+getTypeStructure	src/org/smof/parsers/AbstractBsonParser.java	/^	protected <T> TypeStructure<T> getTypeStructure(Class<T> type) {$/;"	m	class:AbstractBsonParser
+getTypeStructure	src/org/smof/parsers/SmofParser.java	/^	public <T> TypeStructure<T> getTypeStructure(Class<T> type) {$/;"	m	class:SmofParser
+getTypeStructure	src/org/smof/parsers/SmofTypeContext.java	/^	<T> TypeStructure<T> getTypeStructure(Class<T> type, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext
+getTypeStructureFromSub	src/org/smof/parsers/SmofTypeContext.java	/^	private TypeStructure<?> getTypeStructureFromSub(Class<?> type) {$/;"	m	class:SmofTypeContext	file:
+getValidSuperType	src/org/smof/collection/CollectionsPool.java	/^	private Class<? extends Element> getValidSuperType(Class<? extends Element> elClass) {$/;"	m	class:CollectionsPool	file:
+getValue	src/org/smof/parsers/BsonLazyObjectId.java	/^	public ObjectId getValue() {$/;"	m	class:BsonLazyObjectId
+getValueOf	src/org/smof/parsers/StringParser.java	/^	private Method getValueOf(Class<?> enumType) throws NoSuchMethodException, SecurityException {$/;"	m	class:StringParser	file:
+greaterThan	src/org/smof/annnotations/OperatorType.java	/^	greaterThan("$gt"),$/;"	e	enum:OperatorType	file:
+greaterThanEquals	src/org/smof/annnotations/OperatorType.java	/^	greaterThanEquals("$gte"),$/;"	e	enum:OperatorType	file:
+gridStreamManager	src/org/smof/collection/Smof.java	/^	private final SmofGridStreamManager gridStreamManager;$/;"	f	class:Smof	file:
+handleError	src/org/smof/collection/CollectionsPool.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:CollectionsPool	file:
+handleError	src/org/smof/collection/SmofCollectionImpl.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofCollectionImpl	file:
+handleError	src/org/smof/collection/SmofDispatcher.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofDispatcher	file:
+handleError	src/org/smof/collection/SmofResults.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofResults	file:
+handleError	src/org/smof/collection/SmofUpdateQuery.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofUpdateQuery	file:
+handleError	src/org/smof/index/InternalIndex.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:InternalIndex	file:
+handleError	src/org/smof/index/PartialIndex.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:PartialIndex	file:
+handleError	src/org/smof/parsers/AbstractBsonParser.java	/^	protected static void handleError(Throwable cause) {$/;"	m	class:AbstractBsonParser
+handleError	src/org/smof/parsers/LazyLoader.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:LazyLoader	file:
+handleError	src/org/smof/parsers/SmofParser.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofParser	file:
+handleError	src/org/smof/parsers/SmofTypeContext.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:SmofTypeContext	file:
+handleError	src/org/smof/parsers/TypeBuilder.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:TypeBuilder	file:
+handleError	src/org/smof/parsers/TypeStructure.java	/^	private static void handleError(Throwable cause) {$/;"	m	class:TypeStructure	file:
+handleField	src/org/smof/parsers/ObjectParser.java	/^	private <T> void handleField(BsonDocument document, BsonBuilder<T> builder, PrimaryField field) {$/;"	m	class:ObjectParser	file:
+handleField	src/org/smof/parsers/TypeBuilder.java	/^	private void handleField(final Map<String, PrimaryField> fields, ParameterField param) {$/;"	m	class:TypeBuilder	file:
+handleForceInspection	src/org/smof/parsers/SmofTypeContext.java	/^	private <T> void handleForceInspection(Class<T> type, TypeStructure<?> typeStructure, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+handleSubtype	src/org/smof/parsers/SmofTypeContext.java	/^	private void handleSubtype(Class<?> type, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+handleSupertype	src/org/smof/parsers/SmofTypeContext.java	/^	private <T> TypeStructure<T> handleSupertype(Class<T> type, Object factory, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+handleTypeParser	src/org/smof/parsers/SmofTypeContext.java	/^	private <T> TypeParser<T> handleTypeParser(Class<T> type, TypeStructure<?> typeStructure, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+hasIndexes	src/org/smof/parsers/TypeStructure.java	/^	private boolean hasIndexes() {$/;"	m	class:TypeStructure	file:
+hashCode	src/org/smof/element/AbstractElement.java	/^	public int hashCode() {$/;"	m	class:AbstractElement
+hashCode	src/org/smof/field/PrimaryField.java	/^	public int hashCode() {$/;"	m	class:PrimaryField
+hashCode	src/org/smof/index/InternalIndex.java	/^	public int hashCode() {$/;"	m	class:InternalIndex
+id	src/org/smof/collection/SmofCollectionImpl.java	/^		private final ObjectId id;$/;"	f	class:SmofCollectionImpl.IdLoader	file:
+id	src/org/smof/element/AbstractElement.java	/^	private ObjectId id;$/;"	f	class:AbstractElement	file:
+id	src/org/smof/parsers/LazyLoader.java	/^		private final ObjectId id;$/;"	f	class:LazyLoader.Handler	file:
+idEq	src/org/smof/collection/SmofUpdateQuery.java	/^	public void idEq(BsonObjectId id) {$/;"	m	class:SmofUpdateQuery
+idEq	src/org/smof/collection/SmofUpdateQuery.java	/^	public void idEq(ObjectId id) {$/;"	m	class:SmofUpdateQuery
+increase	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> increase(Number value, String fieldName) {$/;"	m	class:SmofUpdate
+index	src/org/smof/index/InternalIndex.java	/^	private final Bson index;$/;"	f	class:InternalIndex	file:
+index	src/org/smof/index/PartialIndex.java	/^	private final Bson index;$/;"	f	class:PartialIndex	file:
+indexes	src/org/smof/collection/SmofCollectionImpl.java	/^	private final Set<InternalIndex> indexes;$/;"	f	class:SmofCollectionImpl	file:
+indexes	src/org/smof/parsers/TypeStructure.java	/^	private final Set<InternalIndex> indexes;$/;"	f	class:TypeStructure	file:
+insert	src/org/smof/collection/Smof.java	/^	public <T extends Element> boolean insert(T element) {$/;"	m	class:Smof
+insert	src/org/smof/collection/SmofCollection.java	/^	SmofInsertResult insert(T element, SmofOpOptions options);$/;"	m	interface:SmofCollection
+insert	src/org/smof/collection/SmofCollectionImpl.java	/^	private SmofInsertResult insert(T element) {$/;"	m	class:SmofCollectionImpl	file:
+insert	src/org/smof/collection/SmofCollectionImpl.java	/^	public SmofInsertResult insert(T element, SmofOpOptions options) {$/;"	m	class:SmofCollectionImpl
+insert	src/org/smof/collection/SmofDispatcher.java	/^	public <T extends Element> boolean insert(T element, SmofOpOptions options) {$/;"	m	class:SmofDispatcher
+insert	src/org/smof/collection/SmofDispatcher.java	/^	public final <T extends Element> boolean insert(T element) {$/;"	m	class:SmofDispatcher
+invoke	src/org/smof/parsers/LazyLoader.java	/^		public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {$/;"	m	class:LazyLoader.Handler
+isArray	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isArray(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isBoolean	src/org/smof/parsers/BooleanParser.java	/^	private boolean isBoolean(Class<?> type) {$/;"	m	class:BooleanParser	file:
+isBuilder	src/org/smof/field/PrimaryField.java	/^	public boolean isBuilder() {$/;"	m	class:PrimaryField
+isBypassCache	src/org/smof/collection/SmofOpOptions.java	/^	public boolean isBypassCache() {$/;"	m	class:SmofOpOptions
+isByteCollection	src/org/smof/parsers/ByteParser.java	/^	private boolean isByteCollection(PrimaryField fieldOpts) {$/;"	m	class:ByteParser	file:
+isByteComponentType	src/org/smof/parsers/ByteParser.java	/^	private boolean isByteComponentType(Field field) {$/;"	m	class:ByteParser	file:
+isCollection	src/org/smof/parsers/ArrayParser.java	/^	private boolean isCollection(Class<?> type) {$/;"	m	class:ArrayParser	file:
+isCollection	src/org/smof/parsers/ByteParser.java	/^	private boolean isCollection(Class<?> type) {$/;"	m	class:ByteParser	file:
+isDouble	src/org/smof/parsers/NumberParser.java	/^	private boolean isDouble(Class<?> type) {$/;"	m	class:NumberParser	file:
+isElement	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isElement(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isEmpty	src/org/smof/gridfs/SmofGridRef.java	/^	public boolean isEmpty();$/;"	m	interface:SmofGridRef
+isEmpty	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public boolean isEmpty() {$/;"	m	class:SmofGridRefImpl
+isEnum	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isEnum(final Class<?> type) {$/;"	m	class:AbstractBsonParser
+isExternal	src/org/smof/field/PrimaryField.java	/^	public boolean isExternal() {$/;"	m	class:PrimaryField
+isFloat	src/org/smof/parsers/NumberParser.java	/^	private boolean isFloat(Class<?> type) {$/;"	m	class:NumberParser	file:
+isGenericByteArray	src/org/smof/parsers/ByteParser.java	/^	private boolean isGenericByteArray(Class<?> type) {$/;"	m	class:ByteParser	file:
+isInteger	src/org/smof/parsers/NumberParser.java	/^	private boolean isInteger(Class<?> type) {$/;"	m	class:NumberParser	file:
+isInteger	src/org/smof/parsers/StringParser.java	/^	private boolean isInteger(Class<?> type) {$/;"	m	class:StringParser	file:
+isJavaInstant	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJavaInstant(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJavaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJavaLocalDate(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJavaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJavaLocalDateTime(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJodaDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJodaDateTime(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJodaInstant	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJodaInstant(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJodaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJodaLocalDate(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isJodaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isJodaLocalDateTime(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+isLong	src/org/smof/parsers/NumberParser.java	/^	private boolean isLong(Class<?> type) {$/;"	m	class:NumberParser	file:
+isMap	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isMap(final Class<?> type) {$/;"	m	class:AbstractBsonParser
+isMaster	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isMaster(SmofField fieldOpts) {$/;"	m	class:AbstractBsonParser
+isParameterField	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isParameterField(SmofField field) {$/;"	m	class:AbstractBsonParser
+isPrimaryField	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isPrimaryField(SmofField fieldOpts) {$/;"	m	class:AbstractBsonParser
+isPrimitive	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isPrimitive(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isPrimitiveByteArray	src/org/smof/parsers/ByteParser.java	/^	private boolean isPrimitiveByteArray(Class<?> type) {$/;"	m	class:ByteParser	file:
+isRequired	src/org/smof/field/PrimaryField.java	/^	public boolean isRequired() {$/;"	m	class:PrimaryField
+isShort	src/org/smof/parsers/NumberParser.java	/^	private boolean isShort(Class<?> type) {$/;"	m	class:NumberParser	file:
+isSmofGridRef	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isSmofGridRef(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isString	src/org/smof/parsers/AbstractBsonParser.java	/^	protected boolean isString(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isSuccess	src/org/smof/collection/SmofInsertResult.java	/^	public boolean isSuccess() {$/;"	m	class:SmofInsertResult
+isSupportedComponentType	src/org/smof/parsers/ArrayParser.java	/^	private boolean isSupportedComponentType(SmofType componentType) {$/;"	m	class:ArrayParser	file:
+isThrowOnInsertDuplicate	src/org/smof/collection/CollectionOptions.java	/^	boolean isThrowOnInsertDuplicate();$/;"	m	interface:CollectionOptions
+isThrowOnInsertDuplicate	src/org/smof/collection/CollectionOptionsImpl.java	/^	public boolean isThrowOnInsertDuplicate() {$/;"	m	class:CollectionOptionsImpl
+isUnique	src/org/smof/index/InternalIndex.java	/^	private static boolean isUnique(BsonDocument doc) {$/;"	m	class:InternalIndex	file:
+isUnique	src/org/smof/index/PartialIndex.java	/^	private static boolean isUnique(BsonDocument doc) {$/;"	m	class:PartialIndex	file:
+isUpsert	src/org/smof/collection/CollectionOptions.java	/^	boolean isUpsert();$/;"	m	interface:CollectionOptions
+isUpsert	src/org/smof/collection/CollectionOptionsImpl.java	/^	public boolean isUpsert() {$/;"	m	class:CollectionOptionsImpl
+isValid	src/org/smof/collection/CollectionOptions.java	/^	boolean isValid(E element);$/;"	m	interface:CollectionOptions
+isValid	src/org/smof/collection/CollectionOptionsImpl.java	/^	public boolean isValid(E element) {$/;"	m	class:CollectionOptionsImpl
+isValidBson	src/org/smof/parsers/AbstractBsonParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:AbstractBsonParser
+isValidBson	src/org/smof/parsers/ArrayParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:ArrayParser
+isValidBson	src/org/smof/parsers/BooleanParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:BooleanParser
+isValidBson	src/org/smof/parsers/BsonParser.java	/^	boolean isValidBson(BsonValue value);$/;"	m	interface:BsonParser
+isValidBson	src/org/smof/parsers/ByteParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:ByteParser
+isValidBson	src/org/smof/parsers/DateTimeParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:DateTimeParser
+isValidBson	src/org/smof/parsers/NumberParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:NumberParser
+isValidBson	src/org/smof/parsers/ObjectIdParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:ObjectIdParser
+isValidBson	src/org/smof/parsers/ObjectParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:ObjectParser
+isValidBson	src/org/smof/parsers/StringParser.java	/^	public boolean isValidBson(BsonValue value) {$/;"	m	class:StringParser
+isValidComponentType	src/org/smof/parsers/ArrayParser.java	/^	private boolean isValidComponentType(PrimaryField fieldOpts) {$/;"	m	class:ArrayParser	file:
+isValidMap	src/org/smof/parsers/ObjectParser.java	/^	private boolean isValidMap(Class<?> type, PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+isValidType	src/org/smof/parsers/AbstractBsonParser.java	/^	public boolean isValidType(Class<?> type) {$/;"	m	class:AbstractBsonParser
+isValidType	src/org/smof/parsers/AbstractBsonParser.java	/^	public boolean isValidType(SmofField fieldOpts) {$/;"	m	class:AbstractBsonParser
+isValidType	src/org/smof/parsers/ArrayParser.java	/^	public boolean isValidType(SmofField fieldOpts) {$/;"	m	class:ArrayParser
+isValidType	src/org/smof/parsers/BsonParser.java	/^	boolean isValidType(Class<?> type);$/;"	m	interface:BsonParser
+isValidType	src/org/smof/parsers/BsonParser.java	/^	boolean isValidType(SmofField fieldOpts);$/;"	m	interface:BsonParser
+isValidType	src/org/smof/parsers/ByteParser.java	/^	public boolean isValidType(SmofField fieldOpts) {$/;"	m	class:ByteParser
+isValidType	src/org/smof/parsers/ObjectParser.java	/^	public boolean isValidType(Class<?> type) {$/;"	m	class:ObjectParser
+isValidType	src/org/smof/parsers/ObjectParser.java	/^	public boolean isValidType(SmofField fieldOpts) {$/;"	m	class:ObjectParser
+isValidType	src/org/smof/parsers/SmofParser.java	/^	boolean isValidType(SmofField field) {$/;"	m	class:SmofParser
+isZoneDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private boolean isZoneDateTime(Class<?> type) {$/;"	m	class:DateTimeParser	file:
+iterator	src/org/smof/collection/CollectionsPool.java	/^	public Iterator<SmofCollection<?>> iterator() {$/;"	m	class:CollectionsPool
+lazyElements	src/org/smof/parsers/BsonBuilder.java	/^	private final Map<PrimaryField, ObjectId> lazyElements;$/;"	f	class:BsonBuilder	file:
+lazyLoader	src/org/smof/parsers/SmofParser.java	/^	private final LazyLoader lazyLoader;$/;"	f	class:SmofParser	file:
+lazyTypes	src/org/smof/parsers/LazyLoader.java	/^	private final Map<Class<?>, Class<?>> lazyTypes;$/;"	f	class:LazyLoader	file:
+lessThan	src/org/smof/annnotations/OperatorType.java	/^	lessThan("$lt"),$/;"	e	enum:OperatorType	file:
+lessThanEquals	src/org/smof/annnotations/OperatorType.java	/^	lessThanEquals("$lte"),$/;"	e	enum:OperatorType	file:
+loadBucket	src/org/smof/collection/Smof.java	/^	public void loadBucket(String bucketName) {$/;"	m	class:Smof
+loadCollection	src/org/smof/collection/Smof.java	/^	private <T extends Element> void loadCollection(String collectionName, Class<T> elClass, SmofParser parser, CollectionOptions<T> options) {$/;"	m	class:Smof	file:
+loadCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void loadCollection(String collectionName, Class<T> elClass) {$/;"	m	class:Smof
+loadCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void loadCollection(String collectionName, Class<T> elClass, CollectionOptions<T> options) {$/;"	m	class:Smof
+loadCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void loadCollection(String collectionName, Class<T> elClass, Object factory) {$/;"	m	class:Smof
+loadCollection	src/org/smof/collection/Smof.java	/^	public <T extends Element> void loadCollection(String collectionName, Class<T> elClass, Object factory, CollectionOptions<T> options) {$/;"	m	class:Smof
+loadDBIndexes	src/org/smof/collection/SmofCollectionImpl.java	/^	private Set<InternalIndex> loadDBIndexes() {$/;"	m	class:SmofCollectionImpl	file:
+loadDBPartialIndices	src/org/smof/collection/SmofCollectionImpl.java	/^	private Set<PartialIndex> loadDBPartialIndices() {$/;"	m	class:SmofCollectionImpl	file:
+loadFileMetadata	src/org/smof/gridfs/SmofGridStreamManager.java	/^	GridFSFile loadFileMetadata(SmofGridRef ref);$/;"	m	interface:SmofGridStreamManager
+loadFileMetadata	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public GridFSFile loadFileMetadata(SmofGridRef ref) {$/;"	m	class:SmofGridStreamManagerImpl
+loadMetadata	src/org/smof/collection/SmofDispatcher.java	/^	public GridFSFile loadMetadata(SmofGridRef ref) {$/;"	m	class:SmofDispatcher
+loaded	src/org/smof/parsers/LazyLoader.java	/^		private boolean loaded;$/;"	f	class:LazyLoader.Handler	file:
+maxTime	src/org/smof/collection/SmofOpOptions.java	/^	private Pair<Long, TimeUnit> maxTime;$/;"	f	class:SmofOpOptions	file:
+metadata	src/org/smof/gridfs/SmofGridRefImpl.java	/^	private Document metadata;$/;"	f	class:SmofGridRefImpl	file:
+method	src/org/smof/parsers/TypeBuilder.java	/^	private final Pair<Object, Method> method;$/;"	f	class:TypeBuilder	file:
+mongoToken	src/org/smof/annnotations/OperatorType.java	/^	private final String mongoToken;$/;"	f	class:OperatorType	file:
+mongoToken	src/org/smof/index/IndexType.java	/^	private final String mongoToken;$/;"	f	class:IndexType	file:
+multiply	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> multiply(Number value, String fieldName) {$/;"	m	class:SmofUpdate
+name	src/org/smof/annnotations/SmofArray.java	/^	public String name();$/;"	m	interface:SmofArray
+name	src/org/smof/annnotations/SmofBoolean.java	/^	String name();$/;"	m	interface:SmofBoolean
+name	src/org/smof/annnotations/SmofByte.java	/^	String name();$/;"	m	interface:SmofByte
+name	src/org/smof/annnotations/SmofDate.java	/^	public String name();$/;"	m	interface:SmofDate
+name	src/org/smof/annnotations/SmofIndexField.java	/^	String name();$/;"	m	interface:SmofIndexField
+name	src/org/smof/annnotations/SmofNumber.java	/^	public String name();$/;"	m	interface:SmofNumber
+name	src/org/smof/annnotations/SmofObject.java	/^	String name();$/;"	m	interface:SmofObject
+name	src/org/smof/annnotations/SmofObjectId.java	/^	public String name();$/;"	m	interface:SmofObjectId
+name	src/org/smof/annnotations/SmofPFEQuery.java	/^	String name();$/;"	m	interface:SmofPFEQuery
+name	src/org/smof/annnotations/SmofParam.java	/^	public String name();$/;"	m	interface:SmofParam
+name	src/org/smof/annnotations/SmofString.java	/^	String name();$/;"	m	interface:SmofString
+name	src/org/smof/collection/SmofCollectionImpl.java	/^	private final String name;$/;"	f	class:SmofCollectionImpl	file:
+name	src/org/smof/field/PrimaryField.java	/^	private String name;$/;"	f	class:PrimaryField	file:
+name	src/org/smof/field/SecondaryField.java	/^	private final String name;$/;"	f	class:SecondaryField	file:
+newEmptyRef	src/org/smof/gridfs/SmofGridRefFactory.java	/^	public static SmofGridRef newEmptyRef() {$/;"	m	class:SmofGridRefFactory
+newFromDB	src/org/smof/gridfs/SmofGridRefFactory.java	/^	public static SmofGridRef newFromDB(ObjectId id, String bucketName) {$/;"	m	class:SmofGridRefFactory
+newFromFile	src/org/smof/gridfs/SmofGridRefFactory.java	/^	public static SmofGridRef newFromFile(File file) {$/;"	m	class:SmofGridRefFactory
+newFromPath	src/org/smof/gridfs/SmofGridRefFactory.java	/^	public static SmofGridRef newFromPath(Path path) {$/;"	m	class:SmofGridRefFactory
+newStreamManager	src/org/smof/gridfs/SmofGridStreamManager.java	/^	public static SmofGridStreamManager newStreamManager(CollectionsPool pool) {$/;"	m	interface:SmofGridStreamManager
+nextIndex	src/org/smof/index/InternalIndex.java	/^	private static Bson nextIndex(StringTokenizer tokens) {$/;"	m	class:InternalIndex	file:
+nextIndex	src/org/smof/index/PartialIndex.java	/^	private static Bson nextIndex(StringTokenizer tokens) {$/;"	m	class:PartialIndex	file:
+note	src/org/smof/field/ParameterField.java	/^	private final SmofParam note;$/;"	f	class:ParameterField	file:
+onInsertSuccess	src/org/smof/collection/SmofDispatcher.java	/^	private <T extends Element> boolean onInsertSuccess(T element, SmofCollection<T> collection, SmofInsertResult result) {$/;"	m	class:SmofDispatcher	file:
+operator	src/org/smof/annnotations/SmofFilter.java	/^	OperatorType operator();$/;"	m	interface:SmofFilter
+operator	src/org/smof/collection/Operators.java	/^	private final String operator;$/;"	f	class:Operators	file:
+options	src/org/smof/collection/SmofCollectionImpl.java	/^	private final CollectionOptions<T> options;$/;"	f	class:SmofCollectionImpl	file:
+options	src/org/smof/collection/SmofUpdate.java	/^	private final SmofOpOptions options;$/;"	f	class:SmofUpdate	file:
+options	src/org/smof/collection/SmofUpdateQuery.java	/^	private final SmofOpOptions options;$/;"	f	class:SmofUpdateQuery	file:
+options	src/org/smof/index/InternalIndex.java	/^	private final IndexOptions options;$/;"	f	class:InternalIndex	file:
+options	src/org/smof/index/PartialIndex.java	/^	private final IndexOptions options;$/;"	f	class:PartialIndex	file:
+or	src/org/smof/collection/OrQuery.java	/^	public OrQuery<T> or(Bson filter) {$/;"	m	class:OrQuery
+org.smof.annnotations	src/org/smof/annnotations/ForceInspection.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/OperatorType.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofArray.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofBoolean.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofBuilder.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofByte.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofDate.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofFilter.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofIndex.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofIndexField.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofIndexes.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofNumber.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofObject.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofObjectId.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofPFEQuery.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofParam.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofPartialIndex.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofPartialIndexes.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofQueryA.java	/^package org.smof.annnotations;$/;"	p
+org.smof.annnotations	src/org/smof/annnotations/SmofString.java	/^package org.smof.annnotations;$/;"	p
+org.smof.collection	src/org/smof/collection/AbstractSmofQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/AndQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/CollectionOptions.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/CollectionOptionsImpl.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/CollectionsPool.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/FilterQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/Operators.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/OrQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/Smof.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofCollection.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofCollectionImpl.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofDispatcher.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofInsertResult.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofOpOptions.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofResults.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofUpdate.java	/^package org.smof.collection;$/;"	p
+org.smof.collection	src/org/smof/collection/SmofUpdateQuery.java	/^package org.smof.collection;$/;"	p
+org.smof.element	src/org/smof/element/AbstractElement.java	/^package org.smof.element;$/;"	p
+org.smof.element	src/org/smof/element/Element.java	/^package org.smof.element;$/;"	p
+org.smof.exception	src/org/smof/exception/InvalidBsonTypeException.java	/^package org.smof.exception;$/;"	p
+org.smof.exception	src/org/smof/exception/InvalidSmofTypeException.java	/^package org.smof.exception;$/;"	p
+org.smof.exception	src/org/smof/exception/InvalidTypeException.java	/^package org.smof.exception;$/;"	p
+org.smof.exception	src/org/smof/exception/MissingRequiredFieldException.java	/^package org.smof.exception;$/;"	p
+org.smof.exception	src/org/smof/exception/NoSuchCollection.java	/^package org.smof.exception;$/;"	p
+org.smof.exception	src/org/smof/exception/SmofException.java	/^package org.smof.exception;$/;"	p
+org.smof.field	src/org/smof/field/MasterField.java	/^package org.smof.field;$/;"	p
+org.smof.field	src/org/smof/field/ParameterField.java	/^package org.smof.field;$/;"	p
+org.smof.field	src/org/smof/field/PrimaryField.java	/^package org.smof.field;$/;"	p
+org.smof.field	src/org/smof/field/SecondaryField.java	/^package org.smof.field;$/;"	p
+org.smof.field	src/org/smof/field/SmofField.java	/^package org.smof.field;$/;"	p
+org.smof.gridfs	src/org/smof/gridfs/SmofGridRef.java	/^package org.smof.gridfs;$/;"	p
+org.smof.gridfs	src/org/smof/gridfs/SmofGridRefFactory.java	/^package org.smof.gridfs;$/;"	p
+org.smof.gridfs	src/org/smof/gridfs/SmofGridRefImpl.java	/^package org.smof.gridfs;$/;"	p
+org.smof.gridfs	src/org/smof/gridfs/SmofGridStreamManager.java	/^package org.smof.gridfs;$/;"	p
+org.smof.gridfs	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^package org.smof.gridfs;$/;"	p
+org.smof.index	src/org/smof/index/IndexType.java	/^package org.smof.index;$/;"	p
+org.smof.index	src/org/smof/index/InternalIndex.java	/^package org.smof.index;$/;"	p
+org.smof.index	src/org/smof/index/PartialIndex.java	/^package org.smof.index;$/;"	p
+org.smof.parsers	src/org/smof/parsers/AbstractBsonParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/ArrayParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/BooleanParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/BsonBuilder.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/BsonLazyObjectId.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/BsonParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/ByteParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/DateTimeParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/LazyLoader.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/NumberParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/ObjectIdParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/ObjectParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/SerializationContext.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/SmofParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/SmofParserPool.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/SmofType.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/SmofTypeContext.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/StringParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/TypeBuilder.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/TypeParser.java	/^package org.smof.parsers;$/;"	p
+org.smof.parsers	src/org/smof/parsers/TypeStructure.java	/^package org.smof.parsers;$/;"	p
+org.smof.utils	src/org/smof/utils/BsonUtils.java	/^package org.smof.utils;$/;"	p
+parameter	src/org/smof/field/ParameterField.java	/^	private final Parameter parameter;$/;"	f	class:ParameterField	file:
+params	src/org/smof/parsers/TypeBuilder.java	/^	private final List<ParameterField> params;$/;"	f	class:TypeBuilder	file:
+parent	src/org/smof/collection/AndQuery.java	/^	private final SmofQuery<T> parent;$/;"	f	class:AndQuery	file:
+parent	src/org/smof/collection/OrQuery.java	/^	private final SmofQuery<T> parent;$/;"	f	class:OrQuery	file:
+parse	src/org/smof/annnotations/OperatorType.java	/^	public static OperatorType parse(String indexType) {$/;"	m	class:OperatorType
+parse	src/org/smof/collection/SmofResults.java	/^	private T parse(BsonDocument d) {$/;"	m	class:SmofResults	file:
+parse	src/org/smof/index/IndexType.java	/^	public static IndexType parse(String indexType) {$/;"	m	class:IndexType
+parseIndexName	src/org/smof/index/InternalIndex.java	/^	private static List<Bson> parseIndexName(String name) {$/;"	m	class:InternalIndex	file:
+parseIndexName	src/org/smof/index/PartialIndex.java	/^	private static List<Bson> parseIndexName(String name) {$/;"	m	class:PartialIndex	file:
+parser	src/org/smof/collection/AbstractSmofQuery.java	/^	private final SmofParser parser;$/;"	f	class:AbstractSmofQuery	file:
+parser	src/org/smof/collection/Smof.java	/^	private final SmofParser parser;$/;"	f	class:Smof	file:
+parser	src/org/smof/collection/SmofCollectionImpl.java	/^	private final SmofParser parser;$/;"	f	class:SmofCollectionImpl	file:
+parser	src/org/smof/collection/SmofResults.java	/^	private final SmofParser parser;$/;"	f	class:SmofResults	file:
+parser	src/org/smof/collection/SmofUpdate.java	/^	private final SmofParser parser;$/;"	f	class:SmofUpdate	file:
+parser	src/org/smof/collection/SmofUpdateQuery.java	/^	private final SmofParser parser;$/;"	f	class:SmofUpdateQuery	file:
+parsers	src/org/smof/parsers/SmofParser.java	/^	private final SmofParserPool parsers;$/;"	f	class:SmofParser	file:
+parsers	src/org/smof/parsers/SmofParserPool.java	/^	private final Map<SmofType, BsonParser> parsers;$/;"	f	class:SmofParserPool	file:
+partialIndexes	src/org/smof/parsers/TypeStructure.java	/^	private final Set<PartialIndex> partialIndexes;$/;"	f	class:TypeStructure	file:
+partialIndices	src/org/smof/collection/SmofCollectionImpl.java	/^	private final Set<PartialIndex> partialIndices;$/;"	f	class:SmofCollectionImpl	file:
+pfe	src/org/smof/annnotations/SmofPartialIndex.java	/^	SmofPFEQuery pfe();$/;"	m	interface:SmofPartialIndex
+pool	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	private final CollectionsPool pool;$/;"	f	class:SmofGridStreamManagerImpl	file:
+postInserts	src/org/smof/collection/SmofInsertResult.java	/^	private Stack<Pair<String, Element>> postInserts;$/;"	f	class:SmofInsertResult	file:
+primaryField	src/org/smof/field/ParameterField.java	/^	private PrimaryField primaryField;$/;"	f	class:ParameterField	file:
+projection	src/org/smof/collection/SmofOpOptions.java	/^	private Bson projection;$/;"	f	class:SmofOpOptions	file:
+put	src/org/smof/collection/CollectionsPool.java	/^	public <T extends Element> void put(Class<T> elClass, SmofCollection<T> collection) {$/;"	m	class:CollectionsPool
+put	src/org/smof/collection/CollectionsPool.java	/^	public void put(String bucketName, GridFSBucket bucket) {$/;"	m	class:CollectionsPool
+put	src/org/smof/parsers/SerializationContext.java	/^	void put(Object object, SmofType type, BsonValue serializedValue) {$/;"	m	class:SerializationContext
+put	src/org/smof/parsers/SmofTypeContext.java	/^	void put(Class<?> type, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext
+putIfAbsent	src/org/smof/parsers/SmofTypeContext.java	/^	private <T> TypeStructure<T> putIfAbsent(TypeStructure<T> struct, Class<?> type, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+putMetadata	src/org/smof/gridfs/SmofGridRef.java	/^	public void putMetadata(Document document);$/;"	m	interface:SmofGridRef
+putMetadata	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public void putMetadata(Document document) {$/;"	m	class:SmofGridRefImpl
+putMetadataEntry	src/org/smof/gridfs/SmofGridRef.java	/^	public void putMetadataEntry(String key, Object value);$/;"	m	interface:SmofGridRef
+putMetadataEntry	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public void putMetadataEntry(String key, Object value) {$/;"	m	class:SmofGridRefImpl
+putOrAppend	src/org/smof/collection/SmofUpdate.java	/^	private void putOrAppend(Operators op, BsonDocument doc) {$/;"	m	class:SmofUpdate	file:
+putOrAppend	src/org/smof/collection/SmofUpdate.java	/^	private void putOrAppend(String key, BsonDocument doc) {$/;"	m	class:SmofUpdate	file:
+putWithFactory	src/org/smof/parsers/SmofTypeContext.java	/^	<T> void putWithFactory(Class<T> type, Object factory, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext
+query	src/org/smof/annnotations/SmofQueryA.java	/^	SmofFilter[] query();$/;"	m	interface:SmofQueryA
+query	src/org/smof/collection/SmofCollection.java	/^	SmofQuery<T> query();$/;"	m	interface:SmofCollection
+query	src/org/smof/collection/SmofCollectionImpl.java	/^	public SmofQuery<T> query() {$/;"	m	class:SmofCollectionImpl
+rawIndexes	src/org/smof/index/InternalIndex.java	/^	private final Set<Bson> rawIndexes;$/;"	f	class:InternalIndex	file:
+rawIndexes	src/org/smof/index/PartialIndex.java	/^	private final Set<Bson> rawIndexes;$/;"	f	class:PartialIndex	file:
+readDouble	src/org/smof/parsers/NumberParser.java	/^	private Double readDouble(BsonNumber value) {$/;"	m	class:NumberParser	file:
+readInteger	src/org/smof/parsers/NumberParser.java	/^	private int readInteger(final BsonNumber numVal) {$/;"	m	class:NumberParser	file:
+readLong	src/org/smof/parsers/NumberParser.java	/^	private Long readLong(BsonNumber value) {$/;"	m	class:NumberParser	file:
+registerSmofFactory	src/org/smof/collection/Smof.java	/^	public <T> void registerSmofFactory(Class<T> type, Object factory) {$/;"	m	class:Smof
+registerSmofObject	src/org/smof/collection/Smof.java	/^	public <T> void registerSmofObject(Class<T> type) {$/;"	m	class:Smof
+registerType	src/org/smof/parsers/SmofParser.java	/^	public void registerType(Class<?> type) {$/;"	m	class:SmofParser
+registerType	src/org/smof/parsers/SmofParser.java	/^	public void registerType(Class<?> type, Object factory){$/;"	m	class:SmofParser
+remove	src/org/smof/collection/CollectionsPool.java	/^	public void remove(SmofCollection<?> collection) {$/;"	m	class:CollectionsPool
+removeBucket	src/org/smof/collection/CollectionsPool.java	/^	public void removeBucket(String bucketName) {$/;"	m	class:CollectionsPool
+rename	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> rename(String newName, String fieldName) {$/;"	m	class:SmofUpdate
+replace	src/org/smof/collection/SmofCollectionImpl.java	/^	private SmofInsertResult replace(T element, SmofOpOptions options) {$/;"	m	class:SmofCollectionImpl	file:
+required	src/org/smof/field/PrimaryField.java	/^	private boolean required;$/;"	f	class:PrimaryField	file:
+reset	src/org/smof/parsers/SmofParser.java	/^	public void reset() {$/;"	m	class:SmofParser
+results	src/org/smof/collection/AndQuery.java	/^	public SmofResults<T> results() {$/;"	m	class:AndQuery
+results	src/org/smof/collection/FilterQuery.java	/^	SmofResults<E> results();$/;"	m	interface:FilterQuery
+results	src/org/smof/collection/OrQuery.java	/^	public SmofResults<T> results() {$/;"	m	class:OrQuery
+results	src/org/smof/collection/SmofQuery.java	/^	public SmofResults<T> results() {$/;"	m	class:SmofQuery
+results	src/org/smof/collection/SmofResults.java	/^	private final FindIterable<BsonDocument> results;$/;"	f	class:SmofResults	file:
+ret	src/org/smof/collection/SmofOpOptions.java	/^	private ReturnDocument ret;$/;"	f	class:SmofOpOptions	file:
+serContext	src/org/smof/parsers/SmofParser.java	/^	private final SerializationContext serContext;$/;"	f	class:SmofParser	file:
+serialVersionUID	src/org/smof/exception/InvalidBsonTypeException.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:InvalidBsonTypeException	file:
+serialVersionUID	src/org/smof/exception/InvalidSmofTypeException.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:InvalidSmofTypeException	file:
+serialVersionUID	src/org/smof/exception/InvalidTypeException.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:InvalidTypeException	file:
+serialVersionUID	src/org/smof/exception/MissingRequiredFieldException.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:MissingRequiredFieldException	file:
+serialVersionUID	src/org/smof/exception/NoSuchCollection.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:NoSuchCollection	file:
+serialVersionUID	src/org/smof/exception/SmofException.java	/^	private static final long serialVersionUID = 1L;$/;"	f	class:SmofException	file:
+serializationStack	src/org/smof/parsers/SerializationContext.java	/^	private final Map<Pair<Object, SmofType>, BsonValue> serializationStack;$/;"	f	class:SerializationContext	file:
+serializeToBson	src/org/smof/parsers/AbstractBsonParser.java	/^	protected abstract BsonValue serializeToBson(Object value, SmofField fieldOpts);$/;"	m	class:AbstractBsonParser
+serializeToBson	src/org/smof/parsers/ArrayParser.java	/^	protected BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:ArrayParser
+serializeToBson	src/org/smof/parsers/BooleanParser.java	/^	protected BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:BooleanParser
+serializeToBson	src/org/smof/parsers/ByteParser.java	/^	public BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:ByteParser
+serializeToBson	src/org/smof/parsers/DateTimeParser.java	/^	protected BsonValue serializeToBson(Object value, SmofField field) {$/;"	m	class:DateTimeParser
+serializeToBson	src/org/smof/parsers/NumberParser.java	/^	public BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:NumberParser
+serializeToBson	src/org/smof/parsers/ObjectIdParser.java	/^	public BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:ObjectIdParser
+serializeToBson	src/org/smof/parsers/ObjectParser.java	/^	protected BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:ObjectParser
+serializeToBson	src/org/smof/parsers/StringParser.java	/^	protected BsonValue serializeToBson(Object value, SmofField fieldOpts) {$/;"	m	class:StringParser
+set	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> set(BsonValue bson, String fieldName) {$/;"	m	class:SmofUpdate
+set	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> set(Object obj, String fieldName) {$/;"	m	class:SmofUpdate
+setBucketName	src/org/smof/gridfs/SmofGridRef.java	/^	public void setBucketName(String bucketName);$/;"	m	interface:SmofGridRef
+setBucketName	src/org/smof/gridfs/SmofGridRefImpl.java	/^	public void setBucketName(String bucketName) {$/;"	m	class:SmofGridRefImpl
+setBuilder	src/org/smof/field/PrimaryField.java	/^	public void setBuilder(boolean builder) {$/;"	m	class:PrimaryField
+setElementMetadata	src/org/smof/parsers/ObjectParser.java	/^	private void setElementMetadata(BsonDocument document, Object obj) {$/;"	m	class:ObjectParser	file:
+setHandler	src/org/smof/parsers/LazyLoader.java	/^		void setHandler(InvocationHandler handler);$/;"	m	interface:LazyLoader.HandlerSetter
+setId	src/org/smof/element/AbstractElement.java	/^	public void setId(final ObjectId id) {$/;"	m	class:AbstractElement
+setId	src/org/smof/element/Element.java	/^	void setId(final ObjectId id);$/;"	m	interface:Element
+setMaxTime	src/org/smof/collection/SmofOpOptions.java	/^	private void setMaxTime(final FindOneAndReplaceOptions options) {$/;"	m	class:SmofOpOptions	file:
+setMaxTime	src/org/smof/collection/SmofOpOptions.java	/^	private void setMaxTime(final FindOneAndUpdateOptions options) {$/;"	m	class:SmofOpOptions	file:
+setPostInserts	src/org/smof/collection/SmofInsertResult.java	/^	public void setPostInserts(Stack<Pair<String, Element>> postInserts) {$/;"	m	class:SmofInsertResult
+setPrimaryField	src/org/smof/field/ParameterField.java	/^	public void setPrimaryField(PrimaryField field) {$/;"	m	class:ParameterField
+setProjection	src/org/smof/collection/SmofOpOptions.java	/^	private void setProjection(final FindOneAndReplaceOptions options) {$/;"	m	class:SmofOpOptions	file:
+setProjection	src/org/smof/collection/SmofOpOptions.java	/^	private void setProjection(final FindOneAndUpdateOptions options) {$/;"	m	class:SmofOpOptions	file:
+setReturnDocument	src/org/smof/collection/SmofOpOptions.java	/^	public void setReturnDocument(ReturnDocument doc) {$/;"	m	class:SmofOpOptions
+setSort	src/org/smof/collection/SmofOpOptions.java	/^	private void setSort(final FindOneAndReplaceOptions options) {$/;"	m	class:SmofOpOptions	file:
+setSort	src/org/smof/collection/SmofOpOptions.java	/^	private void setSort(final FindOneAndUpdateOptions options) {$/;"	m	class:SmofOpOptions	file:
+setSuccess	src/org/smof/collection/SmofInsertResult.java	/^	public void setSuccess(boolean success) {$/;"	m	class:SmofInsertResult
+setTypes	src/org/smof/parsers/TypeBuilder.java	/^	void setTypes(TypeParser<?> parser) {$/;"	m	class:TypeBuilder
+setUpsert	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdate<T> setUpsert(boolean upsert) {$/;"	m	class:SmofUpdate
+setValue	src/org/smof/parsers/BsonBuilder.java	/^	private void setValue(T element, Field field, final Object value) {$/;"	m	class:BsonBuilder	file:
+sort	src/org/smof/collection/SmofOpOptions.java	/^	private Bson sort;$/;"	f	class:SmofOpOptions	file:
+stream	src/org/smof/collection/SmofResults.java	/^	public Stream<T> stream() {$/;"	m	class:SmofResults
+stream	src/org/smof/gridfs/SmofGridStreamManager.java	/^	Stream<SmofGridRef> stream(String bucketName);$/;"	m	interface:SmofGridStreamManager
+stream	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public Stream<SmofGridRef> stream(String bucketName) {$/;"	m	class:SmofGridStreamManagerImpl
+streamManager	src/org/smof/collection/SmofDispatcher.java	/^	private final SmofGridStreamManager streamManager;$/;"	f	class:SmofDispatcher	file:
+subTypes	src/org/smof/parsers/TypeStructure.java	/^	private final Map<Class<?>, TypeParser<?>> subTypes;$/;"	f	class:TypeStructure	file:
+success	src/org/smof/collection/SmofInsertResult.java	/^	private boolean success;$/;"	f	class:SmofInsertResult	file:
+throwOnConstraintBreach	src/org/smof/collection/CollectionOptions.java	/^	void throwOnConstraintBreach(boolean throu);$/;"	m	interface:CollectionOptions
+throwOnConstraintBreach	src/org/smof/collection/CollectionOptionsImpl.java	/^	private boolean throwOnConstraintBreach;$/;"	f	class:CollectionOptionsImpl	file:
+throwOnConstraintBreach	src/org/smof/collection/CollectionOptionsImpl.java	/^	public void throwOnConstraintBreach(boolean throu) {$/;"	m	class:CollectionOptionsImpl
+throwOnInsertDuplicate	src/org/smof/collection/CollectionOptions.java	/^	void throwOnInsertDuplicate(boolean throu);$/;"	m	interface:CollectionOptions
+throwOnInsertDuplicate	src/org/smof/collection/CollectionOptionsImpl.java	/^	private boolean throwOnInsertDuplicate;$/;"	f	class:CollectionOptionsImpl	file:
+throwOnInsertDuplicate	src/org/smof/collection/CollectionOptionsImpl.java	/^	public void throwOnInsertDuplicate(boolean throu) {$/;"	m	class:CollectionOptionsImpl
+toBson	src/org/smof/parsers/AbstractBsonParser.java	/^	public BsonValue toBson(Object value, SmofField fieldOpts) {$/;"	m	class:AbstractBsonParser
+toBson	src/org/smof/parsers/ArrayParser.java	/^	public BsonValue toBson(Object value, SmofField fieldOpts) {$/;"	m	class:ArrayParser
+toBson	src/org/smof/parsers/BsonParser.java	/^	BsonValue toBson(Object value, SmofField fieldOpts);$/;"	m	interface:BsonParser
+toBson	src/org/smof/parsers/ObjectParser.java	/^	public BsonValue toBson(Object value, SmofField fieldOpts) {$/;"	m	class:ObjectParser
+toBson	src/org/smof/parsers/SmofParser.java	/^	public BsonDocument toBson(Element value) {$/;"	m	class:SmofParser
+toBson	src/org/smof/parsers/SmofParser.java	/^	public BsonValue toBson(Object value, SmofField field) {$/;"	m	class:SmofParser
+toBsonObjectId	src/org/smof/utils/BsonUtils.java	/^	public final static BsonObjectId toBsonObjectId(Element value) {$/;"	m	class:BsonUtils
+toByteCollection	src/org/smof/parsers/ByteParser.java	/^	private Collection<Byte> toByteCollection(BsonBinary value, Class<?> collectionClass) {$/;"	m	class:ByteParser	file:
+toCollection	src/org/smof/parsers/ArrayParser.java	/^	private Collection<Object> toCollection(BsonArray values, PrimaryField fieldOpts) {$/;"	m	class:ArrayParser	file:
+toElement	src/org/smof/parsers/ObjectParser.java	/^	private <T extends Element> T toElement(BsonValue value, Class<T> type) {$/;"	m	class:ObjectParser	file:
+toEnum	src/org/smof/parsers/StringParser.java	/^	private <T> T toEnum(String value, Class<T> type) {$/;"	m	class:StringParser	file:
+toFindOneAndReplace	src/org/smof/collection/SmofOpOptions.java	/^	public FindOneAndReplaceOptions toFindOneAndReplace() {$/;"	m	class:SmofOpOptions
+toFindOneAndUpdateOptions	src/org/smof/collection/SmofOpOptions.java	/^	public FindOneAndUpdateOptions toFindOneAndUpdateOptions() {$/;"	m	class:SmofOpOptions
+toGenericByteArray	src/org/smof/parsers/ByteParser.java	/^	private Byte[] toGenericByteArray(BsonBinary value) {$/;"	m	class:ByteParser	file:
+toJavaInstant	src/org/smof/parsers/DateTimeParser.java	/^	private Instant toJavaInstant(long value) {$/;"	m	class:DateTimeParser	file:
+toJavaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private LocalDate toJavaLocalDate(long value) {$/;"	m	class:DateTimeParser	file:
+toJavaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private LocalDateTime toJavaLocalDateTime(long value) {$/;"	m	class:DateTimeParser	file:
+toJavaZoneDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private ZonedDateTime toJavaZoneDateTime(long value) {$/;"	m	class:DateTimeParser	file:
+toJodaDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private DateTime toJodaDateTime(long date) {$/;"	m	class:DateTimeParser	file:
+toJodaIntant	src/org/smof/parsers/DateTimeParser.java	/^	private org.joda.time.Instant toJodaIntant(long date) {$/;"	m	class:DateTimeParser	file:
+toJodaLocalDate	src/org/smof/parsers/DateTimeParser.java	/^	private org.joda.time.LocalDate toJodaLocalDate(long date) {$/;"	m	class:DateTimeParser	file:
+toJodaLocalDateTime	src/org/smof/parsers/DateTimeParser.java	/^	private org.joda.time.LocalDateTime toJodaLocalDateTime(long date) {$/;"	m	class:DateTimeParser	file:
+toMap	src/org/smof/parsers/ObjectParser.java	/^	private Map<?, ?> toMap(BsonDocument document, PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+toMapKey	src/org/smof/parsers/ObjectParser.java	/^	private Object toMapKey(String key, SecondaryField field) {$/;"	m	class:ObjectParser	file:
+toMapValue	src/org/smof/parsers/ObjectParser.java	/^	private Object toMapValue(BsonValue value, SecondaryField field) {$/;"	m	class:ObjectParser	file:
+toObject	src/org/smof/parsers/ObjectParser.java	/^	private <T> T toObject(BsonDocument document, Class<T> type) {$/;"	m	class:ObjectParser	file:
+toPrimitiveByteArray	src/org/smof/parsers/ByteParser.java	/^	private byte[] toPrimitiveByteArray(BsonBinary value) {$/;"	m	class:ByteParser	file:
+toSmofGridRef	src/org/smof/parsers/ObjectParser.java	/^	private SmofGridRef toSmofGridRef(BsonObjectId idBson, PrimaryField fieldOpts) {$/;"	m	class:ObjectParser	file:
+toString	src/org/smof/collection/SmofOpOptions.java	/^	public String toString() {$/;"	m	class:SmofOpOptions
+toString	src/org/smof/index/PartialIndex.java	/^	public String toString() {$/;"	m	class:PartialIndex
+toUpdateOptions	src/org/smof/collection/SmofOpOptions.java	/^	public UpdateOptions toUpdateOptions() {$/;"	m	class:SmofOpOptions
+true	src/org/smof/annnotations/SmofObject.java	/^	boolean preInsert() default true;$/;"	f	interface:SmofObject
+type	src/org/smof/annnotations/SmofArray.java	/^	public SmofType type();$/;"	m	interface:SmofArray
+type	src/org/smof/annnotations/SmofIndexField.java	/^	IndexType type();$/;"	m	interface:SmofIndexField
+type	src/org/smof/collection/SmofCollectionImpl.java	/^	private final Class<T> type;$/;"	f	class:SmofCollectionImpl	file:
+type	src/org/smof/collection/SmofUpdate.java	/^	private final Class<T> type;$/;"	f	class:SmofUpdate	file:
+type	src/org/smof/collection/SmofUpdateQuery.java	/^	private final Class<T> type;$/;"	f	class:SmofUpdateQuery	file:
+type	src/org/smof/field/MasterField.java	/^	private final SmofType type;$/;"	f	class:MasterField	file:
+type	src/org/smof/field/PrimaryField.java	/^	private final SmofType type;$/;"	f	class:PrimaryField	file:
+type	src/org/smof/field/SecondaryField.java	/^	private final SmofType type;$/;"	f	class:SecondaryField	file:
+type	src/org/smof/parsers/TypeBuilder.java	/^	private final Class<T> type;$/;"	f	class:TypeBuilder	file:
+type	src/org/smof/parsers/TypeParser.java	/^	private final Class<T> type;$/;"	f	class:TypeParser	file:
+type	src/org/smof/parsers/TypeStructure.java	/^	private final Class<T> type;$/;"	f	class:TypeStructure	file:
+types	src/org/smof/parsers/SmofTypeContext.java	/^	private final Map<Class<?>, TypeStructure<?>> types;$/;"	f	class:SmofTypeContext	file:
+update	src/org/smof/collection/Smof.java	/^	public <T extends Element> SmofUpdate<T> update(Class<T> elementClass) {$/;"	m	class:Smof
+update	src/org/smof/collection/SmofCollection.java	/^	SmofUpdate<T> update();$/;"	m	interface:SmofCollection
+update	src/org/smof/collection/SmofCollectionImpl.java	/^	public SmofUpdate<T> update() {$/;"	m	class:SmofCollectionImpl
+update	src/org/smof/collection/SmofUpdate.java	/^	private BsonDocument update;$/;"	f	class:SmofUpdate	file:
+update	src/org/smof/collection/SmofUpdateQuery.java	/^	private final BsonDocument update;$/;"	f	class:SmofUpdateQuery	file:
+updateIndexes	src/org/smof/collection/SmofCollectionImpl.java	/^	private void updateIndexes() {$/;"	m	class:SmofCollectionImpl	file:
+uploadFile	src/org/smof/collection/SmofDispatcher.java	/^	private boolean uploadFile(SmofGridRef ref) {$/;"	m	class:SmofDispatcher	file:
+uploadFile	src/org/smof/gridfs/SmofGridStreamManager.java	/^	void uploadFile(SmofGridRef ref) throws IOException;$/;"	m	interface:SmofGridStreamManager
+uploadFile	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public void uploadFile(SmofGridRef ref) throws IOException {$/;"	m	class:SmofGridStreamManagerImpl
+uploadStream	src/org/smof/gridfs/SmofGridStreamManager.java	/^	void uploadStream(SmofGridRef ref);$/;"	m	interface:SmofGridStreamManager
+uploadStream	src/org/smof/gridfs/SmofGridStreamManager.java	/^	void uploadStream(SmofGridRef ref, InputStream stream);$/;"	m	interface:SmofGridStreamManager
+uploadStream	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	private void uploadStream(SmofGridRef ref, String name, InputStream stream) {$/;"	m	class:SmofGridStreamManagerImpl	file:
+uploadStream	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public void uploadStream(SmofGridRef ref) {$/;"	m	class:SmofGridStreamManagerImpl
+uploadStream	src/org/smof/gridfs/SmofGridStreamManagerImpl.java	/^	public void uploadStream(SmofGridRef ref, InputStream stream) {$/;"	m	class:SmofGridStreamManagerImpl
+upsert	src/org/smof/collection/CollectionOptions.java	/^	void upsert(boolean upsert);$/;"	m	interface:CollectionOptions
+upsert	src/org/smof/collection/CollectionOptionsImpl.java	/^	private boolean upsert;$/;"	f	class:CollectionOptionsImpl	file:
+upsert	src/org/smof/collection/CollectionOptionsImpl.java	/^	public void upsert(boolean upsert) {$/;"	m	class:CollectionOptionsImpl
+upsert	src/org/smof/collection/SmofOpOptions.java	/^	private boolean upsert;$/;"	f	class:SmofOpOptions	file:
+upsert	src/org/smof/collection/SmofOpOptions.java	/^	public void upsert(boolean upsert) {$/;"	m	class:SmofOpOptions
+validTypes	src/org/smof/parsers/AbstractBsonParser.java	/^	protected final List<Class<?>> validTypes;$/;"	f	class:AbstractBsonParser
+validateDocuments	src/org/smof/collection/SmofOpOptions.java	/^	private boolean validateDocuments;$/;"	f	class:SmofOpOptions	file:
+validateDocuments	src/org/smof/collection/SmofOpOptions.java	/^	public void validateDocuments(boolean validateDocuments) {$/;"	m	class:SmofOpOptions
+validateFieldName	src/org/smof/collection/SmofUpdate.java	/^	private SmofField validateFieldName(String fieldName) {$/;"	m	class:SmofUpdate	file:
+validateFieldName	src/org/smof/collection/SmofUpdateQuery.java	/^	private SmofField validateFieldName(String fieldName) {$/;"	m	class:SmofUpdateQuery	file:
+validateParserFields	src/org/smof/parsers/SmofTypeContext.java	/^	private void validateParserFields(TypeParser<?> parser, SmofParserPool parsers) {$/;"	m	class:SmofTypeContext	file:
+validateShort	src/org/smof/parsers/NumberParser.java	/^	private void validateShort(int value) {$/;"	m	class:NumberParser	file:
+value	src/org/smof/annnotations/ForceInspection.java	/^	Class<?>[] value();$/;"	m	interface:ForceInspection
+value	src/org/smof/annnotations/SmofFilter.java	/^	String value();$/;"	m	interface:SmofFilter
+value	src/org/smof/annnotations/SmofIndexes.java	/^	SmofIndex[] value();$/;"	m	interface:SmofIndexes
+where	src/org/smof/collection/SmofUpdate.java	/^	public SmofUpdateQuery<T> where() {$/;"	m	class:SmofUpdate
+withField	src/org/smof/collection/AbstractSmofQuery.java	/^	public Query withField(String fieldName, Object filterValue) {$/;"	m	class:AbstractSmofQuery
+withField	src/org/smof/collection/FilterQuery.java	/^	T withField(String fieldName, Object filterValue);$/;"	m	interface:FilterQuery
+writeDouble	src/org/smof/parsers/NumberParser.java	/^	private BsonDouble writeDouble(Double value) {$/;"	m	class:NumberParser	file:
+writeFloat	src/org/smof/parsers/NumberParser.java	/^	private BsonDouble writeFloat(Float value) {$/;"	m	class:NumberParser	file:
+writeInteger	src/org/smof/parsers/NumberParser.java	/^	private BsonInt32 writeInteger(Integer value) {$/;"	m	class:NumberParser	file:
+writeLong	src/org/smof/parsers/NumberParser.java	/^	private BsonInt64 writeLong(Long value) {$/;"	m	class:NumberParser	file:
+writeShort	src/org/smof/parsers/NumberParser.java	/^	private BsonInt32 writeShort(Short value) {$/;"	m	class:NumberParser	file:
+writeShort	src/org/smof/parsers/NumberParser.java	/^	private short writeShort(final int value) {$/;"	m	class:NumberParser	file:
+Ó	src/org/smof/annnotations/SmofNumber.java	/^	String indexKey() default "";$/;"	f	interface:SmofNumber
+Ó	src/org/smof/annnotations/SmofObjectId.java	/^	public String ref() default "";$/;"	f	interface:SmofObjectId
+Ó	src/org/smof/annnotations/SmofQueryA.java	/^	String name() default "partialFilterExpression";$/;"	f	interface:SmofQueryA
+Ó	src/org/smof/annnotations/SmofString.java	/^	String indexKey() default "";$/;"	f	interface:SmofString
