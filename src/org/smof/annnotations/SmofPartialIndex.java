@@ -8,7 +8,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import org.smof.annnotations.SmofIndexField;
-import org.smof.collection.SmofQuery;
 
 @SuppressWarnings("javadoc")
 @Retention(RetentionPolicy.RUNTIME)

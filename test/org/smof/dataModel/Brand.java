@@ -3,11 +3,14 @@ package org.smof.dataModel;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.smof.annnotations.OperatorType;
 import org.smof.annnotations.SmofBuilder;
 import org.smof.annnotations.SmofIndex;
 import org.smof.annnotations.SmofIndexField;
 import org.smof.annnotations.SmofIndexes;
+import org.smof.annnotations.SmofPFEQuery;
 import org.smof.annnotations.SmofParam;
+import org.smof.annnotations.SmofPartialIndex;
 import org.smof.element.Element;
 import org.smof.index.IndexType;
 

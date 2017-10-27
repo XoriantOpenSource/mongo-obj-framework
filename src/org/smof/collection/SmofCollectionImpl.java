@@ -37,6 +37,7 @@ import org.bson.types.ObjectId;
 import org.smof.element.Element;
 import org.smof.exception.SmofException;
 import org.smof.index.InternalIndex;
+import org.smof.index.PartialIndex;
 import org.smof.parsers.SmofParser;
 import org.smof.utils.BsonUtils;
 
@@ -51,6 +52,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.ReturnDocument;
 
+@SuppressWarnings("unchecked")
 class SmofCollectionImpl<T extends Element> implements SmofCollection<T> {
 
 	private static final int CACHE_SIZE = 200;
@@ -66,19 +68,32 @@ class SmofCollectionImpl<T extends Element> implements SmofCollection<T> {
 	private final Set<InternalIndex> indexes;
 	private final Cache<ObjectId, T> cache;
 	private final CollectionOptions<T> options;
-
+	private final Set<PartialIndex> partialIndices;
+	
 	SmofCollectionImpl(String name, MongoCollection<BsonDocument> collection, Class<T> type, SmofParser parser, CollectionOptions<T> options) {
 		this.collection = collection;
 		this.name = name;
 		this.parser = parser;
 		this.type = type;
 		this.indexes = loadDBIndexes();
+		this.partialIndices=loadDBPartialIndices();
 		updateIndexes();
+		
 		cache = CacheBuilder.newBuilder()
 				.maximumSize(CACHE_SIZE)
 				.expireAfterAccess(5, TimeUnit.MINUTES)
 				.build();
 		this.options = options;
+	}
+
+
+	private Set<PartialIndex> loadDBPartialIndices() {
+		final Set<PartialIndex> partialIndices=Sets.newLinkedHashSet();
+		final ListIndexesIterable<BsonDocument> bsonIndices=collection.listIndexes(BsonDocument.class);
+		for(BsonDocument bsonIndex: bsonIndices){
+			partialIndices.add(PartialIndex.fromBson(bsonIndex));
+		}
+		return partialIndices;
 	}
 
 	private Set<InternalIndex> loadDBIndexes() {
@@ -95,6 +110,12 @@ class SmofCollectionImpl<T extends Element> implements SmofCollection<T> {
 		for(InternalIndex index : newIndexes) {
 			collection.createIndex(index.getIndex(), index.getOptions());
 			indexes.add(index);
+		}
+		
+		final Collection<PartialIndex> partialIndices=CollectionUtils.removeAll(parser.getPartialIndexes(type), this.partialIndices);
+		for(PartialIndex index : partialIndices) {
+			collection.createIndex(index.getIndex(), index.getOptions());
+			this.partialIndices.add(index);
 		}
 	}
 

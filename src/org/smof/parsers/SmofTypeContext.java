@@ -21,6 +21,7 @@
  ******************************************************************************/
 package org.smof.parsers;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
@@ -32,6 +33,7 @@ import org.smof.exception.SmofException;
 import org.smof.field.PrimaryField;
 import org.smof.field.SmofField;
 import org.smof.index.InternalIndex;
+import org.smof.index.PartialIndex;
 
 class SmofTypeContext {
 
@@ -149,4 +151,9 @@ class SmofTypeContext {
 		return types.get(elClass).getIndexes();
 	}
 
+
+	public <T extends Element> Set<PartialIndex> getPartialIndexes(Class<T> elClass) {
+		// TODO Auto-generated method stub
+		return types.get(elClass).getPartialIndexes();
+	}
 }

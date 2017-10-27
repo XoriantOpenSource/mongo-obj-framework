@@ -21,6 +21,7 @@
  ******************************************************************************/
 package org.smof.parsers;
 
+import java.util.Collection;
 import java.util.Set;
 
 import org.bson.BsonDocument;
@@ -139,12 +140,16 @@ public class SmofParser {
 	public <T extends Element> Set<InternalIndex> getIndexes(Class<T> elClass) {
 		return context.getIndexes(elClass);
 	}
-
+	//TODO:Add getPartialIndexes
 	public void reset() {
 		serContext.clear();
 	}
 
 	public SmofField getField(Class<?> type, String fieldName) {
 		return getTypeStructure(type).getAllFields().get(fieldName);
+	}
+
+	public <T extends Element> Collection getPartialIndexes(Class<T> elClass) {
+		return context.getPartialIndexes(elClass);
 	}
 }

@@ -43,7 +43,10 @@ import com.mongodb.client.model.Indexes;
 public class InternalIndex {
 	
 	private static final String UNIQUE = "unique";
-
+	private final Bson index;
+	private final IndexOptions options;
+	private final Set<Bson> rawIndexes;
+	
 	private static void handleError(Throwable cause) {
 		throw new SmofException(cause);
 	}
@@ -155,9 +158,6 @@ public class InternalIndex {
 		return doc.containsKey(UNIQUE) && doc.getBoolean(UNIQUE).getValue();
 	}
 	
-	private final Bson index;
-	private final IndexOptions options;
-	private final Set<Bson> rawIndexes;
 	
 	private InternalIndex(Set<Bson> indexes, IndexOptions options) {
 		rawIndexes = indexes;
